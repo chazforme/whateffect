@@ -1,0 +1,652 @@
+[
+  {
+    "slug": "global-navigation-bar",
+    "no": 1,
+    "category": "navigation",
+    "name_ko": "GNB",
+    "name_en": "Global Navigation Bar",
+    "summary": "모든 페이지 맨 위에 고정된 사이트 대표 메뉴줄",
+    "demo": "mini-ui",
+    "desc": [
+      "홈페이지 맨 위에 늘 있는 메뉴줄이에요",
+      "어느 페이지에서든 같은 자리에 있어요"
+    ],
+    "uses": [
+      "쇼핑몰 맨 위 '홈·상품·이벤트' 메뉴",
+      "회사 홈페이지의 '회사소개·제품·채용' 줄",
+      "은행 사이트에서 '조회·이체' 고를 때"
+    ],
+    "tags": [
+      "#GNB",
+      "#GlobalNavigationBar",
+      "#상단메뉴",
+      "#홈페이지"
+    ],
+    "aliases": [
+      "상단 메뉴",
+      "헤더 메뉴",
+      "글로벌 내비게이션"
+    ],
+    "prompt_vague": "홈페이지 위에 메뉴 좀 쭉 깔아줘",
+    "prompt_exact": "상단에 GNB를 넣어줘. 왼쪽에 로고, 오른쪽에 홈·상품·이벤트·고객센터 4개 메뉴. 높이 64px로 모든 페이지에 똑같이 두고, 지금 보고 있는 페이지 메뉴는 파란 글자 + 2px 밑줄로 표시",
+    "related": [
+      "local-navigation-bar",
+      "mega-menu",
+      "dropdown-menu"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "local-navigation-bar",
+    "no": 2,
+    "category": "navigation",
+    "name_ko": "LNB",
+    "name_en": "Local Navigation Bar",
+    "summary": "큰 메뉴 안의 하위 메뉴를 옆에 세로로 나열",
+    "demo": "mini-ui",
+    "desc": [
+      "큰 메뉴 안의 작은 메뉴들을",
+      "옆에 세로로 줄 세워 보여줘요"
+    ],
+    "uses": [
+      "고객센터에서 '공지사항·자주 묻는 질문' 고를 때",
+      "구청 홈페이지의 '민원 안내' 아래 메뉴",
+      "사내 문서 사이트의 장별 메뉴"
+    ],
+    "tags": [
+      "#LNB",
+      "#LocalNavigationBar",
+      "#사이드메뉴",
+      "#하위메뉴"
+    ],
+    "aliases": [
+      "사이드 메뉴",
+      "왼쪽 메뉴",
+      "서브 메뉴"
+    ],
+    "prompt_vague": "고객센터 들어가면 옆에 작은 메뉴들 세로로 보이게 해줘",
+    "prompt_exact": "고객센터 페이지에 LNB를 넣어줘. 왼쪽 폭 200px에 공지사항·자주 묻는 질문·1:1 문의·배송 안내를 세로로 두고, 고른 항목은 연파랑 배경 + 왼쪽 3px 파란 선. 오른쪽 본문만 바뀌게",
+    "related": [
+      "global-navigation-bar",
+      "breadcrumb",
+      "table-of-contents"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "hamburger-menu",
+    "no": 3,
+    "category": "navigation",
+    "name_ko": "햄버거 메뉴",
+    "name_en": "Hamburger menu",
+    "summary": "줄 세 개 아이콘을 누르면 숨은 메뉴가 펼쳐짐",
+    "demo": "mini-ui",
+    "desc": [
+      "줄 세 개 버튼을 누르면",
+      "숨어 있던 메뉴가 펼쳐져요"
+    ],
+    "uses": [
+      "모바일 쇼핑몰 오른쪽 위 ☰ 버튼",
+      "메뉴가 많아 휴대폰 화면에 다 안 들어갈 때",
+      "회사 홈페이지를 폰으로 볼 때의 메뉴"
+    ],
+    "tags": [
+      "#햄버거메뉴",
+      "#HamburgerMenu",
+      "#메뉴버튼",
+      "#모바일홈페이지"
+    ],
+    "aliases": [
+      "삼선 메뉴",
+      "전체 메뉴 버튼"
+    ],
+    "prompt_vague": "폰에서는 메뉴를 줄 세 개 버튼 눌러야 나오게 해줘",
+    "prompt_exact": "모바일에서는 메뉴를 햄버거 메뉴로 숨겨줘. 오른쪽 위 ☰ 아이콘을 누르면 X로 바뀌고, 머리줄 아래로 메뉴 5개가 0.3초 동안 펼쳐지며 하나씩 나타나게. 다시 누르면 닫히게",
+    "related": [
+      "drawer",
+      "global-navigation-bar",
+      "bottom-tab-bar"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "drawer",
+    "no": 4,
+    "category": "navigation",
+    "name_ko": "드로어",
+    "name_en": "Drawer",
+    "summary": "화면 옆에서 메뉴판이 서랍처럼 밀려 나옴",
+    "demo": "mini-ui",
+    "desc": [
+      "화면 옆에서 메뉴판이",
+      "서랍처럼 스르륵 밀려 나와요"
+    ],
+    "uses": [
+      "배달앱에서 왼쪽 위를 눌러 내 정보 볼 때",
+      "메일 앱에서 받은편지함·보낸편지함 고를 때",
+      "대시보드에서 필터 판을 옆에서 꺼낼 때"
+    ],
+    "tags": [
+      "#드로어",
+      "#Drawer",
+      "#옆에서나오는메뉴",
+      "#앱메뉴"
+    ],
+    "aliases": [
+      "사이드 드로어",
+      "슬라이드 메뉴",
+      "서랍 메뉴"
+    ],
+    "prompt_vague": "왼쪽에서 메뉴 쓱 나오게 해줘",
+    "prompt_exact": "왼쪽 위 ☰을 누르면 드로어가 왼쪽에서 0.3초 동안 밀려 나오게 해줘. 폭은 화면의 75%, 뒤 화면은 45% 어둡게. 바깥을 누르거나 왼쪽으로 쓸면 닫히게",
+    "related": [
+      "hamburger-menu",
+      "bottom-sheet",
+      "local-navigation-bar"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "mega-menu",
+    "no": 5,
+    "category": "navigation",
+    "name_ko": "메가 메뉴",
+    "name_en": "Mega menu",
+    "summary": "메뉴에 올리면 하위 항목 전체가 큰 판으로 펼쳐짐",
+    "demo": "mini-ui",
+    "desc": [
+      "메뉴에 마우스를 올리면",
+      "하위 메뉴가 큰 판에 한눈에 펼쳐져요"
+    ],
+    "uses": [
+      "백화점 몰에서 '카테고리'에 마우스 올릴 때",
+      "대학 홈페이지의 '입학·학사·캠퍼스' 메뉴",
+      "상품 종류가 많은 쇼핑몰 홈페이지"
+    ],
+    "tags": [
+      "#메가메뉴",
+      "#MegaMenu",
+      "#펼침메뉴",
+      "#쇼핑몰"
+    ],
+    "aliases": [
+      "전체 카테고리 메뉴",
+      "대형 드롭다운"
+    ],
+    "prompt_vague": "메뉴에 마우스 올리면 밑에 크게 쫙 펼쳐지게 해줘",
+    "prompt_exact": "'카테고리' 메뉴에 메가 메뉴를 붙여줘. 마우스를 올리면 머리줄 아래 전체 폭으로 0.2초 동안 펼쳐지고, 의류·신발·가방 3열에 하위 항목 3개씩, 오른쪽엔 기획전 배너 1개. 마우스가 벗어나면 닫히게",
+    "related": [
+      "dropdown-menu",
+      "global-navigation-bar",
+      "fat-footer"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "dropdown-menu",
+    "no": 6,
+    "category": "navigation",
+    "name_ko": "드롭다운 메뉴",
+    "name_en": "Dropdown menu",
+    "summary": "버튼을 누르면 바로 아래 작은 목록이 펼쳐짐",
+    "demo": "mini-ui",
+    "desc": [
+      "버튼을 누르면 바로 아래로",
+      "작은 메뉴 목록이 툭 내려와요"
+    ],
+    "uses": [
+      "쇼핑몰에서 '내 이름 ▾' 눌러 주문 내역 갈 때",
+      "게시판 글의 '··· 더보기' 버튼",
+      "대시보드 오른쪽 위 내 계정 메뉴"
+    ],
+    "tags": [
+      "#드롭다운메뉴",
+      "#DropdownMenu",
+      "#펼침목록",
+      "#계정메뉴"
+    ],
+    "aliases": [
+      "풀다운 메뉴",
+      "펼침 메뉴"
+    ],
+    "prompt_vague": "이름 누르면 밑에 메뉴 몇 개 나오게 해줘",
+    "prompt_exact": "오른쪽 위 '김효과 님 ▾'에 드롭다운 메뉴를 달아줘. 누르면 바로 아래 폭 160px 목록(주문 내역·찜한 상품·쿠폰함·로그아웃)이 0.15초 동안 나타나고, 마우스 올린 항목은 연회색 배경. 바깥을 누르면 닫히게",
+    "related": [
+      "mega-menu",
+      "context-menu",
+      "global-navigation-bar"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "breadcrumb",
+    "no": 7,
+    "category": "navigation",
+    "name_ko": "브레드크럼",
+    "name_en": "Breadcrumb",
+    "summary": "지금 페이지까지 온 길을 '홈 › 패션 › 신발'로 표시",
+    "demo": "mini-ui",
+    "desc": [
+      "'홈 › 패션 › 신발'처럼",
+      "지금 어디쯤 왔는지 길을 보여줘요"
+    ],
+    "uses": [
+      "쇼핑몰 상품 페이지 위쪽의 분류 경로",
+      "단계가 깊은 관공서 안내 페이지",
+      "사내 문서의 '전체 › 2025 › 회의록' 표시"
+    ],
+    "tags": [
+      "#브레드크럼",
+      "#Breadcrumb",
+      "#경로표시",
+      "#상세페이지"
+    ],
+    "aliases": [
+      "경로 표시",
+      "위치 표시",
+      "빵 부스러기 메뉴"
+    ],
+    "prompt_vague": "지금 어디 페이지인지 위에 길 같은 거 보여줘",
+    "prompt_exact": "제목 위에 브레드크럼을 넣어줘. '홈 › 패션 › 신발 › 운동화' 형식, 13px 회색 글자, 마지막(지금 페이지)만 진하게. 앞쪽 항목은 누르면 그 페이지로 이동",
+    "related": [
+      "local-navigation-bar",
+      "global-navigation-bar",
+      "stepper"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "tabs",
+    "no": 8,
+    "category": "navigation",
+    "name_ko": "탭",
+    "name_en": "Tabs",
+    "summary": "같은 자리에서 내용을 갈아 끼우는 제목 줄",
+    "demo": "simulate",
+    "desc": [
+      "제목을 누를 때마다",
+      "아래 내용이 그 자리에서 바뀌어요"
+    ],
+    "uses": [
+      "쇼핑몰 상품 페이지의 '상품정보·리뷰·문의'",
+      "뉴스 앱의 '정치·경제·사회'",
+      "상세페이지의 긴 설명을 나눠 보여줄 때"
+    ],
+    "tags": [
+      "#탭",
+      "#Tabs",
+      "#내용전환",
+      "#상세페이지"
+    ],
+    "aliases": [
+      "탭 메뉴"
+    ],
+    "prompt_vague": "상품정보랑 리뷰를 눌러서 바꿔 보게 해줘",
+    "prompt_exact": "상품 상세에 탭 3개(상품정보·리뷰 128·문의 4)를 만들어줘. 고른 탭은 진한 글자 + 아래 2px 파란 밑줄이 0.25초 동안 옆으로 미끄러지고, 아래 내용만 바뀌게",
+    "related": [
+      "segmented-control",
+      "bottom-tab-bar",
+      "pagination"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "segmented-control",
+    "no": 9,
+    "category": "navigation",
+    "name_ko": "세그먼티드 컨트롤",
+    "name_en": "Segmented control",
+    "summary": "알약 모양 칸 안에서 보기 하나를 고르는 버튼 묶음",
+    "demo": "simulate",
+    "desc": [
+      "알약 모양 칸 안에서",
+      "흰 조각이 미끄러지며 하나를 골라요"
+    ],
+    "uses": [
+      "걸음 수 앱에서 '일간·주간·월간' 바꿀 때",
+      "지도 앱의 '자동차·대중교통·도보'",
+      "대시보드 그래프 기간 바꾸기"
+    ],
+    "tags": [
+      "#세그먼티드컨트롤",
+      "#SegmentedControl",
+      "#보기전환",
+      "#대시보드"
+    ],
+    "aliases": [
+      "세그먼트 버튼",
+      "알약 버튼"
+    ],
+    "prompt_vague": "일간 주간 월간 붙어 있는 버튼 만들어줘",
+    "prompt_exact": "그래프 위에 세그먼티드 컨트롤(일간·주간·월간)을 넣어줘. 회색 알약 바탕 안에서 흰 조각이 0.25초 동안 고른 칸으로 미끄러지고, 그래프 숫자만 바뀌게",
+    "related": [
+      "tabs",
+      "bottom-tab-bar",
+      "dropdown-menu"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "bottom-tab-bar",
+    "no": 10,
+    "category": "navigation",
+    "name_ko": "하단 탭바",
+    "name_en": "Bottom tab bar",
+    "summary": "앱 화면 맨 아래에 고정된 아이콘 메뉴 4~5개",
+    "demo": "mini-ui",
+    "desc": [
+      "앱 맨 아래 아이콘 메뉴로",
+      "엄지로 화면을 바로바로 옮겨요"
+    ],
+    "uses": [
+      "카카오톡 아래 '친구·채팅·더보기'",
+      "배달앱 아래 '홈·검색·찜·주문내역'",
+      "모바일 홈페이지 맨 아래 고정 메뉴"
+    ],
+    "tags": [
+      "#하단탭바",
+      "#BottomTabBar",
+      "#앱메뉴",
+      "#모바일"
+    ],
+    "aliases": [
+      "탭바",
+      "바텀 내비게이션",
+      "하단 메뉴"
+    ],
+    "prompt_vague": "앱처럼 맨 밑에 아이콘 메뉴 깔아줘",
+    "prompt_exact": "화면 맨 아래에 하단 탭바를 고정해줘. 홈·검색·찜·마이 4칸, 아이콘 24px + 글자 11px, 높이 56px. 고른 칸은 파란색, 나머지는 회색",
+    "related": [
+      "tabs",
+      "floating-action-button",
+      "hamburger-menu"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "floating-action-button",
+    "no": 11,
+    "category": "navigation",
+    "name_ko": "플로팅 액션 버튼",
+    "name_en": "Floating action button",
+    "summary": "화면 구석에 떠 있는 가장 중요한 동그란 버튼",
+    "demo": "mini-ui",
+    "desc": [
+      "화면 구석에 동그란 버튼이",
+      "내용이 움직여도 늘 떠 있어요"
+    ],
+    "uses": [
+      "커뮤니티 앱 오른쪽 아래 '+ 글쓰기'",
+      "쇼핑몰 구석의 '상담하기' 버튼",
+      "홈페이지 구석의 '문의하기' 버튼"
+    ],
+    "tags": [
+      "#플로팅액션버튼",
+      "#FloatingActionButton",
+      "#떠있는버튼",
+      "#글쓰기버튼"
+    ],
+    "aliases": [
+      "FAB",
+      "플로팅 버튼"
+    ],
+    "prompt_vague": "오른쪽 아래에 둥둥 떠 있는 동그란 버튼 만들어줘",
+    "prompt_exact": "오른쪽 아래(가장자리 16px)에 지름 56px 파란 원 FAB을 고정해줘. 가운데 '+'를 누르면 45도 돌아 X가 되고, 위로 '글쓰기·사진 올리기' 작은 버튼 2개가 0.05초 간격으로 튀어나오게",
+    "related": [
+      "bottom-tab-bar",
+      "drawer",
+      "stagger"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "pagination",
+    "no": 12,
+    "category": "navigation",
+    "name_ko": "페이지네이션",
+    "name_en": "Pagination",
+    "summary": "긴 목록을 여러 쪽으로 나눠 번호로 넘김",
+    "demo": "simulate",
+    "desc": [
+      "긴 목록을 여러 쪽으로 나누고",
+      "아래 번호를 눌러 넘겨 봐요"
+    ],
+    "uses": [
+      "게시판 맨 아래 '1 2 3 4 5'",
+      "쇼핑몰 검색 결과 다음 쪽 볼 때",
+      "대시보드 표에서 다음 50줄 볼 때"
+    ],
+    "tags": [
+      "#페이지네이션",
+      "#Pagination",
+      "#쪽번호",
+      "#게시판"
+    ],
+    "aliases": [
+      "페이지 번호",
+      "쪽 번호"
+    ],
+    "prompt_vague": "목록 밑에 1 2 3 숫자 넣어서 넘기게 해줘",
+    "prompt_exact": "목록 아래에 페이지네이션을 넣어줘. 한 쪽에 10개씩, '‹ 1 2 3 4 5 ›' 형식. 지금 쪽 번호는 파란 원 안에 흰 글자, 양 끝 화살표는 이전·다음 쪽",
+    "related": [
+      "load-more",
+      "tabs",
+      "stepper"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "load-more",
+    "no": 13,
+    "category": "navigation",
+    "name_ko": "더보기 버튼",
+    "name_en": "Load more button",
+    "summary": "누를 때마다 목록 아래에 몇 개씩 더 붙음",
+    "demo": "mini-ui",
+    "desc": [
+      "'더보기'를 누를 때마다",
+      "목록 아래에 몇 개씩 더 붙어요"
+    ],
+    "uses": [
+      "쇼핑몰 상품 목록 맨 아래 '더보기 ∨'",
+      "공지사항에서 지난 글 더 볼 때",
+      "홈페이지 '최근 소식'을 3개씩 늘려 볼 때"
+    ],
+    "tags": [
+      "#더보기버튼",
+      "#LoadMoreButton",
+      "#목록펼치기",
+      "#상품목록"
+    ],
+    "aliases": [
+      "더보기",
+      "목록 더 불러오기"
+    ],
+    "prompt_vague": "목록 다 보여주지 말고 더보기 누르면 더 나오게 해줘",
+    "prompt_exact": "목록은 처음 6개만 보여주고 아래에 '더보기 (6/24)' 버튼을 둬. 누르면 6개씩 아래에 이어 붙고 0.05초 간격으로 차례로 나타나게. 다 보여주면 버튼은 숨겨줘",
+    "related": [
+      "pagination",
+      "stagger"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "stepper",
+    "no": 14,
+    "category": "navigation",
+    "name_ko": "스테퍼",
+    "name_en": "Stepper",
+    "summary": "여러 단계 중 지금 몇 번째인지 동그라미로 표시",
+    "demo": "simulate",
+    "desc": [
+      "① ② ③ 단계 중에",
+      "지금 어디인지 동그라미로 알려줘요"
+    ],
+    "uses": [
+      "쇼핑몰 결제할 때 '장바구니 → 결제 → 완료'",
+      "회원가입의 '약관 동의 → 정보 입력' 단계",
+      "신청서를 여러 쪽으로 나눠 받을 때"
+    ],
+    "tags": [
+      "#스테퍼",
+      "#Stepper",
+      "#단계표시",
+      "#결제과정"
+    ],
+    "aliases": [
+      "단계 표시",
+      "진행 단계"
+    ],
+    "prompt_vague": "결제할 때 지금 몇 단계인지 위에 보여줘",
+    "prompt_exact": "주문 과정 위에 4단계 스테퍼(장바구니·배송 정보·결제·완료)를 넣어줘. 끝난 단계는 파란 원 + ✓, 지금 단계는 파란 테두리, 남은 단계는 회색. 단계 사이 선은 진행한 만큼 파랗게 채워지게",
+    "related": [
+      "breadcrumb",
+      "pagination"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "table-of-contents",
+    "no": 15,
+    "category": "navigation",
+    "name_ko": "목차",
+    "name_en": "Table of contents",
+    "summary": "긴 글의 소제목을 모아 두고 누르면 그 부분으로 이동",
+    "demo": "mini-ui",
+    "desc": [
+      "긴 글의 소제목을 모아 두고",
+      "누르면 그 부분으로 바로 가요"
+    ],
+    "uses": [
+      "블로그 긴 글 옆의 '목차' 상자",
+      "위키 문서 맨 위의 차례",
+      "보고서·설명서를 웹 문서로 옮길 때"
+    ],
+    "tags": [
+      "#목차",
+      "#TableOfContents",
+      "#차례",
+      "#문서"
+    ],
+    "aliases": [
+      "TOC",
+      "차례"
+    ],
+    "prompt_vague": "글이 길어서 옆에 차례 두고 누르면 거기로 가게 해줘",
+    "prompt_exact": "문서 왼쪽에 목차를 고정해줘. 소제목을 자동으로 모아 번호 붙여 나열하고, 누르면 그 소제목으로 0.5초 동안 부드럽게 이동. 지금 읽는 항목은 파란 굵은 글자로 표시",
+    "related": [
+      "local-navigation-bar",
+      "breadcrumb",
+      "anchor-scroll"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "context-menu",
+    "no": 16,
+    "category": "navigation",
+    "name_ko": "컨텍스트 메뉴",
+    "name_en": "Context menu",
+    "summary": "오른쪽 클릭한 자리에 그 대상용 메뉴가 뜸",
+    "demo": "mini-ui",
+    "desc": [
+      "오른쪽 클릭한 바로 그 자리에",
+      "그 대상에 맞는 메뉴가 떠요"
+    ],
+    "uses": [
+      "파일에 오른쪽 클릭해서 '이름 바꾸기'",
+      "카톡 메시지 길게 눌러 '답장·복사'",
+      "대시보드 표의 한 줄을 눌러 '내보내기'"
+    ],
+    "tags": [
+      "#컨텍스트메뉴",
+      "#ContextMenu",
+      "#우클릭메뉴",
+      "#파일관리"
+    ],
+    "aliases": [
+      "우클릭 메뉴",
+      "오른쪽 클릭 메뉴",
+      "길게 누르기 메뉴"
+    ],
+    "prompt_vague": "오른쪽 클릭하면 메뉴 뜨게 해줘",
+    "prompt_exact": "파일 카드에 컨텍스트 메뉴를 붙여줘. 오른쪽 클릭(폰은 길게 누르기)한 위치에 폭 160px 메뉴(열기·공유하기·이름 바꾸기·삭제)를 띄우고, 삭제는 빨간 글자. 바깥을 누르거나 Esc를 누르면 닫히게",
+    "related": [
+      "dropdown-menu",
+      "command-palette"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "command-palette",
+    "no": 17,
+    "category": "navigation",
+    "name_ko": "커맨드 팔레트",
+    "name_en": "Command palette",
+    "summary": "단축키로 검색창을 띄워 기능을 이름으로 찾아 실행",
+    "demo": "mini-ui",
+    "desc": [
+      "단축키 하나로 검색창을 띄워",
+      "원하는 기능을 이름으로 찾아 실행해요"
+    ],
+    "uses": [
+      "노션에서 Ctrl+K로 페이지 찾을 때",
+      "메뉴가 너무 많은 관리자 화면에서 기능 찾기",
+      "대시보드에서 보고서 이름으로 바로 가기"
+    ],
+    "tags": [
+      "#커맨드팔레트",
+      "#CommandPalette",
+      "#단축키검색",
+      "#관리자화면"
+    ],
+    "aliases": [
+      "명령 검색창",
+      "Ctrl+K 검색",
+      "빠른 실행"
+    ],
+    "prompt_vague": "메뉴 찾기 힘드니까 검색해서 바로 가게 해줘",
+    "prompt_exact": "Ctrl+K(맥은 ⌘K)를 누르면 화면 가운데 위에 커맨드 팔레트를 띄워줘. 뒤는 40% 어둡게, 글자를 칠 때마다 메뉴 이름을 걸러 보여주고, ↑↓ 화살표로 고르고 Enter로 실행. Esc면 닫히게",
+    "related": [
+      "dropdown-menu",
+      "context-menu"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "fat-footer",
+    "no": 18,
+    "category": "navigation",
+    "name_ko": "팻 푸터",
+    "name_en": "Fat footer",
+    "summary": "페이지 맨 아래에 사이트 전체 바로가기를 크게 모아 둔 바닥",
+    "demo": "mini-ui",
+    "desc": [
+      "페이지 맨 아래에 사이트 전체",
+      "바로가기를 크게 모아 둬요"
+    ],
+    "uses": [
+      "쇼핑몰 맨 아래 '회사소개·이용약관·고객센터'",
+      "회사 홈페이지 맨 아래 주소·연락처",
+      "끝까지 읽은 사람에게 다음 갈 곳을 보여줄 때"
+    ],
+    "tags": [
+      "#팻푸터",
+      "#FatFooter",
+      "#하단정보",
+      "#회사홈페이지"
+    ],
+    "aliases": [
+      "사이트맵 푸터",
+      "큰 푸터",
+      "하단 정보"
+    ],
+    "prompt_vague": "홈페이지 맨 밑에 회사 정보랑 링크 다 모아줘",
+    "prompt_exact": "페이지 맨 아래에 팻 푸터를 넣어줘. 진한 남색 바탕에 4열(회사·고객센터·정책·앱 받기), 열마다 링크 3개. 맨 아래 한 줄엔 회사 주소·사업자번호·저작권 표시",
+    "related": [
+      "global-navigation-bar",
+      "mega-menu"
+    ],
+    "status": "final"
+  }
+]

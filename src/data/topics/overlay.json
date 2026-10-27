@@ -1,0 +1,380 @@
+[
+  {
+    "slug": "modal",
+    "no": 1,
+    "category": "overlay",
+    "name_ko": "모달",
+    "name_en": "Modal",
+    "summary": "화면 가운데 뜨고 뒤는 어두워지는 창",
+    "demo": "mini-ui",
+    "desc": ["화면 가운데 창이 뜨고", "뒤쪽은 어두워져서 멈춰요"],
+    "uses": [
+      "쇼핑몰에서 '배송 안내'를 눌렀을 때 뜨는 창",
+      "로그인 버튼 누르면 가운데 뜨는 로그인 창",
+      "대시보드에서 항목을 눌러 자세히 볼 때"
+    ],
+    "tags": ["#모달", "#Modal", "#팝업창", "#안내창"],
+    "aliases": ["모달 창", "다이얼로그", "레이어 팝업"],
+    "prompt_vague": "버튼 누르면 화면 가운데 창 하나 뜨게 해줘",
+    "prompt_exact": "'배송 안내' 버튼을 누르면 모달로 열어줘. 뒤 배경은 검정 45%로 어둡게, 창은 가운데에서 0.25초 동안 살짝 커지며 나타나고, 바깥을 누르거나 ESC·'확인'을 누르면 닫히게",
+    "related": ["alert-dialog", "bottom-sheet", "lightbox"],
+    "status": "final"
+  },
+  {
+    "slug": "alert-dialog",
+    "no": 2,
+    "category": "overlay",
+    "name_ko": "확인 창",
+    "name_en": "Alert dialog",
+    "summary": "되돌릴 수 없는 일 전에 한 번 더 묻는 창",
+    "demo": "mini-ui",
+    "desc": ["'정말 삭제할까요?' 하고", "한 번 더 물어보는 작은 창이에요"],
+    "uses": [
+      "사진 앱에서 사진 지우기 직전",
+      "장바구니 전체 비우기 누를 때",
+      "문서 저장 안 하고 나가려 할 때"
+    ],
+    "tags": ["#확인창", "#AlertDialog", "#경고창", "#삭제확인"],
+    "aliases": ["얼럿", "컨펌 창", "경고창"],
+    "prompt_vague": "삭제 누르면 진짜 지울 건지 한 번 물어봐줘",
+    "prompt_exact": "삭제 버튼은 바로 지우지 말고 확인 창(alert dialog)을 띄워줘. 제목 '정말 삭제할까요?', 설명 '삭제하면 되돌릴 수 없어요', 버튼은 '취소'(회색)와 '삭제'(빨강) 두 개. 바깥을 눌러도 닫히지 않게",
+    "related": ["modal", "action-sheet", "toast"],
+    "status": "final"
+  },
+  {
+    "slug": "bottom-sheet",
+    "no": 3,
+    "category": "overlay",
+    "name_ko": "바텀시트",
+    "name_en": "Bottom sheet",
+    "summary": "화면 하단에서 올라오는 패널",
+    "demo": "mini-ui",
+    "desc": ["화면 아래에서 창이 쓱 올라와요", "아래로 쓸어내리면 다시 닫혀요"],
+    "uses": [
+      "쇼핑몰에서 옷 사이즈 고를 때",
+      "'공유하기' 누르면 나오는 창",
+      "배달앱에서 정렬 순서 바꿀 때"
+    ],
+    "tags": ["#바텀시트", "#BottomSheet", "#모바일UI", "#오버레이"],
+    "aliases": ["하단 시트", "바텀 팝업"],
+    "prompt_vague": "화면 아래에서 뭐 올라오게 해줘",
+    "prompt_exact": "옵션 선택은 바텀시트로. 아래에서 0.3초 동안 올라오고, 위쪽에 잡는 손잡이 막대를 달고, 바깥을 누르거나 아래로 쓸면 닫히게. 높이는 화면의 60%",
+    "related": ["action-sheet", "modal", "drawer"],
+    "status": "final"
+  },
+  {
+    "slug": "action-sheet",
+    "no": 4,
+    "category": "overlay",
+    "name_ko": "액션 시트",
+    "name_en": "Action sheet",
+    "summary": "할 일 목록과 취소 버튼이 아래에서 뜨는 선택 창",
+    "demo": "mini-ui",
+    "desc": ["할 수 있는 일 몇 개가", "'취소'와 함께 아래에서 떠요"],
+    "uses": [
+      "프로필 사진 바꿀 때 '사진 찍기 / 앨범에서 선택'",
+      "카톡 메시지 길게 눌렀을 때 나오는 선택지",
+      "글 오른쪽 '…' 눌러 수정·삭제 고를 때"
+    ],
+    "tags": ["#액션시트", "#ActionSheet", "#선택창", "#모바일"],
+    "aliases": ["선택 시트", "iOS 액션 시트"],
+    "prompt_vague": "사진 바꾸기 누르면 아이폰처럼 아래에 선택지 뜨게 해줘",
+    "prompt_exact": "'사진 바꾸기'는 액션 시트로. 화면 아래 여백 8px 띄우고 둥근 묶음 안에 '사진 찍기 / 앨범에서 선택 / 사진 지우기(빨강)', 그 아래 따로 떨어진 '취소' 버튼. 0.3초 동안 올라오고 뒤는 어둡게",
+    "related": ["bottom-sheet", "alert-dialog", "context-menu"],
+    "status": "final"
+  },
+  {
+    "slug": "full-screen-overlay",
+    "no": 5,
+    "category": "overlay",
+    "name_ko": "전체 화면 덮개",
+    "name_en": "Full-screen overlay",
+    "summary": "화면 전체를 덮어 버리는 새 층",
+    "demo": "mini-ui",
+    "desc": ["화면 전체를 통째로 덮어서", "그것 하나에만 집중하게 해요"],
+    "uses": [
+      "쇼핑몰에서 돋보기 누르면 열리는 검색 화면",
+      "영상 앱에서 전체 메뉴를 열 때",
+      "홈페이지 메뉴 버튼 누르면 화면 가득 펼쳐지는 메뉴"
+    ],
+    "tags": ["#전체화면덮개", "#FullScreenOverlay", "#오버레이", "#검색화면"],
+    "aliases": ["풀스크린 오버레이", "오버레이"],
+    "prompt_vague": "돋보기 누르면 화면 전체가 검색창으로 바뀌게 해줘",
+    "prompt_exact": "검색은 전체 화면 오버레이로. 남색 96% 불투명 배경이 화면을 다 덮고 0.3초 동안 페이드인, 위쪽에 검색 입력칸과 '최근 검색어' 버튼들, 오른쪽 위 ✕나 ESC로 닫히게. 열려 있는 동안 뒤 페이지는 스크롤 막기",
+    "related": ["modal", "lightbox", "drawer"],
+    "status": "final"
+  },
+  {
+    "slug": "side-panel",
+    "no": 6,
+    "category": "overlay",
+    "name_ko": "사이드 패널",
+    "name_en": "Side panel",
+    "summary": "목록은 둔 채 옆에서 상세 내용이 밀려 나옴",
+    "demo": "mini-ui",
+    "desc": ["목록은 그대로 둔 채", "오른쪽에서 자세한 내용이 나와요"],
+    "uses": [
+      "관리자 화면에서 주문 한 줄 눌러 상세 볼 때",
+      "메일함에서 메일을 눌러 옆에서 읽을 때",
+      "대시보드에서 숫자를 눌러 근거 자료 볼 때"
+    ],
+    "tags": ["#사이드패널", "#SidePanel", "#상세보기", "#대시보드"],
+    "aliases": ["상세 패널", "슬라이드 패널", "인스펙터"],
+    "prompt_vague": "표에서 한 줄 누르면 오른쪽에 자세한 내용 나오게 해줘",
+    "prompt_exact": "주문 목록 행을 누르면 오른쪽에서 폭 400px 사이드 패널이 0.3초 동안 밀려 나오게. 뒤 목록은 어둡게 하지 말고 그대로 보이게, 고른 행은 연파랑으로 표시. 패널 위쪽 ✕로 닫기",
+    "related": ["drawer", "modal", "bottom-sheet"],
+    "status": "final"
+  },
+  {
+    "slug": "popover",
+    "no": 7,
+    "category": "overlay",
+    "name_ko": "팝오버",
+    "name_en": "Popover",
+    "summary": "누른 버튼 바로 옆에 붙어 뜨는 작은 창",
+    "demo": "mini-ui",
+    "desc": ["누른 버튼 바로 옆에", "꼬리 달린 작은 창이 붙어 떠요"],
+    "uses": [
+      "상품 페이지에서 '공유' 누르면 나오는 링크 복사·카톡",
+      "달력에서 날짜 눌러 일정 미리 볼 때",
+      "표 머리글 옆 'ⓘ' 눌러 계산 기준 볼 때"
+    ],
+    "tags": ["#팝오버", "#Popover", "#말풍선창", "#공유하기"],
+    "aliases": ["말풍선 창", "풍선 창"],
+    "prompt_vague": "공유 버튼 누르면 그 밑에 작게 메뉴 뜨게 해줘",
+    "prompt_exact": "'공유' 버튼은 팝오버로. 버튼 바로 아래 8px 떨어져서 꼬리(화살표)가 버튼을 가리키게, 폭 180px 흰 창에 '링크 복사 / 카카오톡 / 메일'. 뒤는 어둡게 하지 말고 바깥을 누르면 닫히게",
+    "related": ["tooltip", "dropdown-menu", "modal"],
+    "status": "final"
+  },
+  {
+    "slug": "tooltip",
+    "no": 8,
+    "category": "overlay",
+    "name_ko": "툴팁",
+    "name_en": "Tooltip",
+    "summary": "마우스를 올리면 뜨는 짧은 설명 말풍선",
+    "demo": "simulate",
+    "desc": ["아이콘 위에 마우스를 올리면", "작은 말풍선으로 이름을 알려줘요"],
+    "uses": [
+      "글자 없는 하트·공유 아이콘이 뭔지 알려줄 때",
+      "엑셀 버튼 위에 마우스 올렸을 때 뜨는 설명",
+      "대시보드 그래프 위에 숫자 띄울 때"
+    ],
+    "tags": ["#툴팁", "#Tooltip", "#도움말", "#아이콘설명"],
+    "aliases": ["말풍선 도움말", "호버 설명"],
+    "prompt_vague": "아이콘에 마우스 올리면 뭔지 글씨 뜨게 해줘",
+    "prompt_exact": "아이콘 버튼마다 툴팁 달아줘. 마우스를 올리고 0.4초 뒤 버튼 위 6px에 남색 배경·흰 글씨 12px 말풍선(아래 꼬리 포함)으로 이름 표시, 마우스가 떠나면 바로 사라지게. 휴대폰에선 길게 누를 때 뜨게",
+    "related": ["popover", "coach-mark"],
+    "status": "final"
+  },
+  {
+    "slug": "coach-mark",
+    "no": 9,
+    "category": "overlay",
+    "name_ko": "코치마크",
+    "name_en": "Coach mark",
+    "summary": "처음 쓰는 사람에게 버튼을 하나씩 짚어주는 안내",
+    "demo": "mini-ui",
+    "desc": ["화면이 어두워지고 버튼 하나만 밝게", "'여기를 눌러요' 하고 짚어줘요"],
+    "uses": [
+      "앱을 처음 깔고 열었을 때 나오는 사용법 안내",
+      "새 기능이 생겼을 때 '새로워요' 알려주는 말풍선",
+      "사내 대시보드를 처음 보는 사람에게 보는 법 안내"
+    ],
+    "tags": ["#코치마크", "#CoachMark", "#사용법안내", "#첫사용"],
+    "aliases": ["온보딩 투어", "기능 안내", "튜토리얼 말풍선"],
+    "prompt_vague": "처음 들어온 사람한테 버튼마다 설명해주는 거 만들어줘",
+    "prompt_exact": "처음 방문하면 코치마크 투어 2단계 보여줘. 화면을 검정 60%로 덮고 짚을 버튼만 동그랗게 뚫어서 밝게, 옆에 말풍선(설명 + '1/2 다음')을 띄우고 '다음' 누르면 0.4초 동안 다음 버튼으로 이동. 끝나면 다시 안 보이게 기억",
+    "related": ["tooltip", "modal", "full-screen-overlay"],
+    "status": "final"
+  },
+  {
+    "slug": "lightbox",
+    "no": 10,
+    "category": "overlay",
+    "name_ko": "라이트박스",
+    "name_en": "Lightbox",
+    "summary": "사진을 누르면 까만 배경 위에 크게 보여줌",
+    "demo": "mini-ui",
+    "desc": ["작은 사진을 누르면 까만 바탕에", "크게 펼쳐지고 옆으로 넘겨 봐요"],
+    "uses": [
+      "쇼핑몰 후기 사진을 눌러 크게 볼 때",
+      "블로그 여행 사진 넘겨 볼 때",
+      "상세페이지 제품 사진 확대해 볼 때"
+    ],
+    "tags": ["#라이트박스", "#Lightbox", "#사진크게보기", "#갤러리"],
+    "aliases": ["사진 뷰어", "이미지 팝업", "갤러리 뷰"],
+    "prompt_vague": "사진 누르면 크게 보이고 옆으로 넘길 수 있게 해줘",
+    "prompt_exact": "사진 목록에 라이트박스 넣어줘. 사진을 누르면 그 자리에서 0.35초 동안 커지며 가운데로 오고 배경은 검정 90%. 좌우 화살표·옆으로 쓸기로 다음 사진, 아래 '2 / 6' 표시, ✕나 ESC 누르면 원래 자리로 줄어들며 닫히게",
+    "related": ["modal", "carousel", "full-screen-overlay"],
+    "status": "final"
+  },
+  {
+    "slug": "popup-notice",
+    "no": 11,
+    "category": "overlay",
+    "name_ko": "공지 팝업",
+    "name_en": "Popup notice",
+    "summary": "들어오자마자 뜨는 공지창과 '오늘 하루 보지 않기'",
+    "demo": "mini-ui",
+    "desc": ["사이트에 들어오자마자 공지가 뜨고", "'오늘 하루 보지 않기'로 닫아요"],
+    "uses": [
+      "쇼핑몰의 '추석 연휴 배송 안내' 창",
+      "은행 사이트의 '시스템 점검 안내'",
+      "회사 홈페이지에 행사·채용 소식 띄울 때"
+    ],
+    "tags": ["#공지팝업", "#PopupNotice", "#오늘하루보지않기", "#공지사항"],
+    "aliases": ["레이어 팝업", "팝업창", "이벤트 팝업"],
+    "prompt_vague": "홈페이지 들어오면 공지 창 뜨고 오늘 하루 안 보게 하는 거 넣어줘",
+    "prompt_exact": "첫 화면에 공지 팝업 띄워줘. 왼쪽 위에서 20px 떨어진 폭 360px 창, 위는 공지 이미지, 아래 띠에 '오늘 하루 보지 않기'(체크하면 24시간 동안 안 뜸)와 '닫기'. 뒤 화면은 어둡게 하지 말 것",
+    "related": ["modal", "cookie-banner", "top-banner"],
+    "status": "final"
+  },
+  {
+    "slug": "cookie-banner",
+    "no": 12,
+    "category": "overlay",
+    "name_ko": "쿠키 동의 배너",
+    "name_en": "Cookie banner",
+    "summary": "방문 기록 저장을 허락받는 아래쪽 띠",
+    "demo": "mini-ui",
+    "desc": ["화면 아래에 띠가 올라와서", "방문 기록 저장을 허락받아요"],
+    "uses": [
+      "해외 사이트 들어가면 아래에 뜨는 '모두 허용'",
+      "처음 들어간 뉴스 사이트의 쿠키 안내",
+      "해외 고객도 보는 회사 홈페이지 만들 때"
+    ],
+    "tags": ["#쿠키동의배너", "#CookieBanner", "#개인정보", "#동의받기"],
+    "aliases": ["쿠키 배너", "쿠키 팝업", "동의 배너"],
+    "prompt_vague": "아래에 쿠키 허용할지 물어보는 띠 넣어줘",
+    "prompt_exact": "처음 방문하면 화면 아래에 쿠키 동의 배너를 0.4초 동안 올려줘. 왼쪽에 '쿠키를 사용해도 될까요?'와 한 줄 설명, 오른쪽에 '거부'(테두리)와 '모두 허용'(파랑) 버튼. 고르면 내려가고 선택은 기억",
+    "related": ["top-banner", "popup-notice", "bottom-sheet"],
+    "status": "final"
+  },
+  {
+    "slug": "top-banner",
+    "no": 13,
+    "category": "overlay",
+    "name_ko": "띠 배너",
+    "name_en": "Announcement bar",
+    "summary": "페이지 맨 위의 얇은 알림 띠",
+    "demo": "mini-ui",
+    "desc": ["페이지 맨 위에 얇은 띠로", "할인·공지를 한 줄로 알려요"],
+    "uses": [
+      "쇼핑몰 맨 위 '첫 구매 10% 쿠폰 받기'",
+      "'오늘 밤 12시 점검이 있어요' 같은 공지",
+      "홈페이지에 신제품 출시 소식 걸어둘 때"
+    ],
+    "tags": ["#띠배너", "#AnnouncementBar", "#상단배너", "#할인안내"],
+    "aliases": ["상단 띠 배너", "탑 배너", "공지 바"],
+    "prompt_vague": "홈페이지 맨 위에 얇게 할인 문구 한 줄 넣어줘",
+    "prompt_exact": "페이지 맨 위에 높이 36px 띠 배너 넣어줘. 남색 배경에 흰 글씨 '🎁 첫 구매 10% 할인 쿠폰 받기 ›' 가운데 정렬, 누르면 쿠폰 페이지로. 오른쪽 ✕를 누르면 0.3초 동안 접히면서 아래 내용이 올라오게",
+    "related": ["cookie-banner", "popup-notice", "inline-alert"],
+    "status": "final"
+  },
+  {
+    "slug": "picture-in-picture",
+    "no": 14,
+    "category": "overlay",
+    "name_ko": "작은 화면 재생",
+    "name_en": "Picture-in-picture",
+    "summary": "영상이 구석 작은 창으로 줄어 계속 재생됨",
+    "demo": "mini-ui",
+    "desc": ["영상이 구석의 작은 창으로 줄어서", "다른 걸 보는 동안에도 계속 나와요"],
+    "uses": [
+      "유튜브 보다가 아래 댓글 내릴 때",
+      "쇼핑 라이브 보면서 상품 고를 때",
+      "강의 영상 띄워 두고 자료 페이지 볼 때"
+    ],
+    "tags": ["#작은화면재생", "#PictureInPicture", "#영상", "#동시보기"],
+    "aliases": ["PIP", "픽처인픽처", "미니 플레이어"],
+    "prompt_vague": "스크롤 내리면 영상이 구석에 작게 따라오게 해줘",
+    "prompt_exact": "영상이 화면 밖으로 밀려나면 오른쪽 아래 폭 200px 미니 플레이어(PIP)로 0.4초 동안 줄어들며 계속 재생. 그림자와 둥근 모서리, 누르면 원래 자리로 돌아가고 ✕로 끄기",
+    "related": ["side-panel", "lightbox"],
+    "status": "final"
+  },
+  {
+    "slug": "card",
+    "no": 15,
+    "category": "overlay",
+    "name_ko": "카드",
+    "name_en": "Card",
+    "summary": "사진·제목·숫자를 한 상자에 묶어 보여줌",
+    "demo": "loop",
+    "desc": ["사진·이름·가격을 한 상자에 묶어", "같은 모양으로 나란히 보여줘요"],
+    "uses": [
+      "쇼핑몰 상품 목록의 상품 하나하나",
+      "뉴스 앱에 기사가 한 장씩 놓인 모습",
+      "대시보드에 숫자를 상자별로 나눠 둘 때"
+    ],
+    "tags": ["#카드", "#Card", "#정보묶음", "#상품목록"],
+    "aliases": ["카드형", "카드 뉴스형 상자", "타일"],
+    "prompt_vague": "상품을 하얀 상자에 하나씩 담아서 보여줘",
+    "prompt_exact": "상품은 카드로 보여줘. 흰 배경, 모서리 16px, 옅은 그림자(0 8px 20px 12%), 안쪽 여백 12px. 위에 정사각 사진, 아래 이름(14px)·가격(파랑 굵게)·별점 순서. 마우스를 올리면 4px 떠오르게",
+    "related": ["accordion", "carousel", "card-grid"],
+    "status": "final"
+  },
+  {
+    "slug": "accordion",
+    "no": 16,
+    "category": "overlay",
+    "name_ko": "아코디언",
+    "name_en": "Accordion",
+    "summary": "제목을 누르면 내용이 펼쳐지고 다른 건 접힘",
+    "demo": "simulate",
+    "desc": ["질문을 누르면 답이 아래로 펼쳐지고", "다른 걸 열면 앞의 건 접혀요"],
+    "uses": [
+      "쇼핑몰 '자주 묻는 질문' 목록",
+      "상세페이지의 '배송·교환 안내' 접힌 칸",
+      "긴 문서를 항목별로 접어 정리할 때"
+    ],
+    "tags": ["#아코디언", "#Accordion", "#접고펼치기", "#자주묻는질문"],
+    "aliases": ["FAQ 펼치기", "접이식 목록"],
+    "prompt_vague": "자주 묻는 질문 누르면 답이 펼쳐지게 해줘",
+    "prompt_exact": "FAQ는 아코디언으로. 질문 줄 높이 52px, 오른쪽 '+'는 열리면 45도 돌아 '×'. 누르면 답이 0.3초 동안 아래로 펼쳐지고, 한 번에 하나만 열리게(다른 걸 열면 앞의 것은 접힘)",
+    "related": ["read-more", "card", "detail-page"],
+    "status": "final"
+  },
+  {
+    "slug": "read-more",
+    "no": 17,
+    "category": "overlay",
+    "name_ko": "더보기·접기",
+    "name_en": "Read more",
+    "summary": "긴 글을 몇 줄만 보여주고 눌러서 펼침",
+    "demo": "simulate",
+    "desc": ["긴 글은 두세 줄만 보여주다가", "'더보기'를 누르면 끝까지 펼쳐요"],
+    "uses": [
+      "쇼핑몰 상품 후기의 '더보기'",
+      "인스타그램 긴 글 아래 '… 더 보기'",
+      "상세페이지 긴 제품 설명 접어둘 때"
+    ],
+    "tags": ["#더보기접기", "#ReadMore", "#펼치기", "#후기"],
+    "aliases": ["더보기", "펼쳐보기", "말줄임"],
+    "prompt_vague": "후기가 길면 두 줄만 보이고 더보기 누르면 다 보이게 해줘",
+    "prompt_exact": "후기 본문은 두 줄까지만 보여주고 끝을 흐리게, 아래 '더보기 ⌄'를 누르면 0.3초 동안 높이가 늘며 전체 표시, 글자는 '접기 ⌃'로 바뀌게. 두 줄 이하인 글엔 버튼 숨기기",
+    "related": ["accordion", "card"],
+    "status": "final"
+  },
+  {
+    "slug": "carousel",
+    "no": 18,
+    "category": "overlay",
+    "name_ko": "캐러셀",
+    "name_en": "Carousel",
+    "summary": "여러 장을 한 자리에서 옆으로 넘겨 보여줌",
+    "demo": "loop",
+    "desc": ["한 자리에서 여러 장이", "옆으로 한 장씩 넘어가요"],
+    "uses": [
+      "쇼핑몰 첫 화면의 돌아가는 할인 배너",
+      "배달앱 맨 위 이벤트 배너",
+      "카드뉴스를 옆으로 넘겨 보여줄 때"
+    ],
+    "tags": ["#캐러셀", "#Carousel", "#슬라이드배너", "#이벤트배너"],
+    "aliases": ["슬라이더", "배너 롤링", "슬라이드 배너"],
+    "prompt_vague": "배너 여러 장이 옆으로 자동으로 넘어가게 해줘",
+    "prompt_exact": "첫 화면 배너는 캐러셀로. 3장이 4초마다 0.4초 동안 왼쪽으로 넘어가고 마지막 다음엔 첫 장으로 자연스럽게 이어지게. 아래 점 표시(현재 장은 길게), 오른쪽 아래 '1 / 3', 손가락으로 쓸어도 넘어가게",
+    "related": ["lightbox", "card", "stagger"],
+    "status": "final"
+  }
+]

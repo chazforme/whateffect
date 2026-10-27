@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 효과사전 (whateffect)
 
-## Getting Started
+"이 효과, AI한테 뭐라고 말해야 하지?"를 해결하는 웹 효과 용어 사전.
+주제 10개 × 18개 = 효과 180개. 카드마다 움직이는 데모, 쉬운 설명, 이럴 때 써요, AI에게 하는 요청 예시.
 
-First, run the development server:
+## 실행
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000 에서 확인.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 구조
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| 위치 | 내용 |
+|---|---|
+| `CLAUDE.md` | 작업 기준서 (카피 규칙, 데모 규칙) — Claude Code가 먼저 읽음 |
+| `src/data/terms.json` | 주제 목록 + 글자 효과 18개 |
+| `src/data/topics/<주제>.json` | 나머지 9개 주제 용어 |
+| `src/components/demos/` | 데모 (글자 효과는 바로 아래, 나머지는 주제별 폴더) |
+| `src/lib/topics.ts` | 홈 주제 카드 문구 (한 줄 소개, 왜 필요한지, 쓰임) |
+| `src/hooks/useLoop.ts`, `src/lib/loop.ts` | 모든 데모가 공유하는 애니메이션 시계 |
+| `public/reference/card-prototype.html` | 처음 확정한 카드 시안 |
 
-## Learn More
+## 남은 일
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 용어 상세 페이지 (`/term/[slug]`): AI에게 이렇게 말하세요 + 복사 버튼, 연관 용어
+- 검색 (Fuse.js)
+- 배포 (Vercel)

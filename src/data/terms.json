@@ -1,0 +1,651 @@
+{
+  "_note": "글자 효과 18개. 다른 주제는 data/topics/<주제>.json",
+  "categories": [
+    {
+      "id": "text",
+      "name_ko": "글자 효과",
+      "default_demo": "loop"
+    },
+    {
+      "id": "motion",
+      "name_ko": "등장·전환",
+      "default_demo": "loop"
+    },
+    {
+      "id": "scroll",
+      "name_ko": "스크롤",
+      "default_demo": "simulate"
+    },
+    {
+      "id": "micro",
+      "name_ko": "호버·제스처",
+      "default_demo": "simulate"
+    },
+    {
+      "id": "navigation",
+      "name_ko": "내비게이션",
+      "default_demo": "mini-ui"
+    },
+    {
+      "id": "form",
+      "name_ko": "입력·폼",
+      "default_demo": "mini-ui"
+    },
+    {
+      "id": "feedback",
+      "name_ko": "피드백·상태",
+      "default_demo": "mini-ui"
+    },
+    {
+      "id": "overlay",
+      "name_ko": "오버레이·컨테이너",
+      "default_demo": "mini-ui"
+    },
+    {
+      "id": "layout",
+      "name_ko": "레이아웃",
+      "default_demo": "static"
+    },
+    {
+      "id": "style",
+      "name_ko": "비주얼 스타일",
+      "default_demo": "static"
+    }
+  ],
+  "terms": [
+    {
+      "slug": "typewriter",
+      "no": 1,
+      "category": "text",
+      "name_ko": "타이핑 효과",
+      "name_en": "Typewriter",
+      "summary": "커서와 함께 한 글자씩 입력되듯 나타남",
+      "demo": "loop",
+      "desc": [
+        "글자가 한 자씩 써지듯 나타나요",
+        "커서가 깜빡여서 진짜 치는 느낌이에요"
+      ],
+      "uses": [
+        "홈페이지 첫 화면의 큰 제목",
+        "검색창 속 '예: 부산 맛집' 같은 예시 문구",
+        "AI가 대답하는 것처럼 보여주고 싶을 때"
+      ],
+      "tags": [
+        "#타이핑효과",
+        "#Typewriter",
+        "#텍스트애니메이션",
+        "#첫화면제목"
+      ],
+      "aliases": [],
+      "prompt_vague": "제목 글자가 좀 멋있게 나오게 해줘",
+      "prompt_exact": "첫 화면 제목은 타이핑 효과로. 한 글자에 0.1초, 다 쓰면 1.5초 멈췄다가 지우고 다음 문구로. 끝에 파란 커서가 깜빡이게",
+      "related": [
+        "rotating-text",
+        "split-text",
+        "text-scramble"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "rotating-text",
+      "no": 2,
+      "category": "text",
+      "name_ko": "로테이팅 텍스트",
+      "name_en": "Rotating text",
+      "summary": "문장 속 특정 단어만 순환하며 교체",
+      "demo": "loop",
+      "desc": [
+        "문장은 그대로 두고",
+        "한 단어만 계속 바뀌어요"
+      ],
+      "uses": [
+        "'오늘은 커피 어때요?'처럼 추천 메뉴를 돌려 보여줄 때",
+        "앱에서 할 수 있는 일을 하나씩 소개할 때",
+        "'○○를 위한 서비스'에서 대상만 바꿔 보여줄 때"
+      ],
+      "tags": [
+        "#로테이팅텍스트",
+        "#RotatingText",
+        "#단어교체",
+        "#문구애니메이션"
+      ],
+      "aliases": [],
+      "prompt_vague": "문장에서 단어 하나만 계속 바뀌게 해줘",
+      "prompt_exact": "\"오늘은 ○○ 어때요?\" 문장에 로테이팅 텍스트 적용. 커피·빵·케이크가 1.4초마다 아래에서 위로 밀려 올라오며 교체",
+      "related": [
+        "typewriter",
+        "masked-text-reveal",
+        "marquee"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "masked-text-reveal",
+      "no": 3,
+      "category": "text",
+      "name_ko": "마스크 리빌",
+      "name_en": "Masked text reveal",
+      "summary": "가려진 틀 안에서 글자가 밀려 올라오며 드러남",
+      "demo": "loop",
+      "desc": [
+        "보이지 않는 틀 아래에서",
+        "글자가 쑥 밀려 올라와요"
+      ],
+      "uses": [
+        "새 시즌 광고의 큰 제목",
+        "브랜드를 소개하는 첫 문장",
+        "영화 예고편처럼 멋있게 등장시킬 때"
+      ],
+      "tags": [
+        "#마스크리빌",
+        "#MaskedReveal",
+        "#글자등장",
+        "#제목애니메이션"
+      ],
+      "aliases": [],
+      "prompt_vague": "제목이 밑에서 스르륵 올라오게 해줘",
+      "prompt_exact": "제목에 마스크 리빌 적용. 줄마다 보이지 않는 틀 아래에서 0.7초 동안 밀려 올라오고, 줄 사이 0.2초 간격",
+      "related": [
+        "split-text",
+        "blur-reveal",
+        "stagger"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "split-text",
+      "no": 4,
+      "category": "text",
+      "name_ko": "스플릿 텍스트",
+      "name_en": "Split text",
+      "summary": "글자·단어를 쪼개 시간차로 등장",
+      "demo": "loop",
+      "desc": [
+        "글자를 한 자씩 쪼개서",
+        "조금씩 시간차를 두고 나타나요"
+      ],
+      "uses": [
+        "'환영해요!' 같은 짧은 인사말",
+        "행사 이름을 크게 보여줄 때",
+        "페이지가 열리고 처음 뜨는 문구"
+      ],
+      "tags": [
+        "#스플릿텍스트",
+        "#SplitText",
+        "#글자쪼개기",
+        "#시간차등장"
+      ],
+      "aliases": [],
+      "prompt_vague": "글자가 하나씩 따로 튀어나오게 해줘",
+      "prompt_exact": "인사말에 스플릿 텍스트 적용. 글자 단위로 쪼개서 0.09초 간격으로, 아래에서 30px 올라오며 살짝 회전하다 제자리로",
+      "related": [
+        "stagger",
+        "masked-text-reveal",
+        "wave-text"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "text-scramble",
+      "no": 5,
+      "category": "text",
+      "name_ko": "텍스트 스크램블",
+      "name_en": "Text scramble",
+      "summary": "무작위 문자가 돌다가 원래 글자로 맞춰짐",
+      "demo": "loop",
+      "desc": [
+        "뒤죽박죽 글자가 마구 돌다가",
+        "하나씩 제자리를 찾아 맞춰져요"
+      ],
+      "uses": [
+        "해커 영화 같은 분위기를 내고 싶을 때",
+        "버튼에 마우스를 올리면 글자가 섞일 때",
+        "추첨 번호를 두근두근하게 보여줄 때"
+      ],
+      "tags": [
+        "#텍스트스크램블",
+        "#TextScramble",
+        "#글자섞임",
+        "#해커효과"
+      ],
+      "aliases": [],
+      "prompt_vague": "글자가 해커처럼 막 섞이다가 나오게 해줘",
+      "prompt_exact": "제목에 텍스트 스크램블 적용. 영문·숫자가 무작위로 돌다가 왼쪽부터 0.1초 간격으로 원래 글자로 맞춰지게. 고정폭 글꼴",
+      "related": [
+        "typewriter",
+        "glitch",
+        "odometer"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "blur-reveal",
+      "no": 6,
+      "category": "text",
+      "name_ko": "블러 리빌",
+      "name_en": "Blur reveal",
+      "summary": "흐릿한 상태에서 선명해지며 등장",
+      "demo": "loop",
+      "desc": [
+        "흐릿하던 글자가",
+        "초점이 맞듯 또렷해져요"
+      ],
+      "uses": [
+        "조용하고 고급스러운 브랜드 소개",
+        "사진 위에 문구가 은은하게 뜰 때",
+        "다음 장면으로 넘어가며 나오는 문구"
+      ],
+      "tags": [
+        "#블러리빌",
+        "#BlurReveal",
+        "#흐림효과",
+        "#부드러운등장"
+      ],
+      "aliases": [],
+      "prompt_vague": "흐릿했다가 선명해지게 해줘",
+      "prompt_exact": "문구에 블러 리빌 적용. 흐림 12px에서 0으로 0.9초, 투명도도 같이 올라오게. 단어마다 0.25초 차이",
+      "related": [
+        "masked-text-reveal",
+        "fade-in",
+        "split-text"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "highlighter-animation",
+      "no": 7,
+      "category": "text",
+      "name_ko": "형광펜 효과",
+      "name_en": "Highlighter animation",
+      "summary": "형광펜으로 긋듯 배경색이 칠해짐",
+      "demo": "loop",
+      "desc": [
+        "형광펜으로 쓱 긋는 것처럼",
+        "중요한 부분에 색이 칠해져요"
+      ],
+      "uses": [
+        "'오늘만 무료배송' 같은 꼭 봐야 할 문구",
+        "긴 글에서 제일 중요한 한 줄",
+        "가격이나 할인율을 눈에 띄게 할 때"
+      ],
+      "tags": [
+        "#형광펜효과",
+        "#Highlighter",
+        "#강조",
+        "#밑줄긋기"
+      ],
+      "aliases": [],
+      "prompt_vague": "중요한 문구에 형광펜 칠한 것처럼 해줘",
+      "prompt_exact": "\"전 품목 무료배송\"에 형광펜 효과. 노란색(#FFE45C)이 글자 아래 절반 높이로 왼쪽→오른쪽 0.7초 동안 칠해지게",
+      "related": [
+        "animated-underline",
+        "gradient-text",
+        "scroll-linked-highlight"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "gradient-text",
+      "no": 8,
+      "category": "text",
+      "name_ko": "그라디언트 텍스트",
+      "name_en": "Gradient text",
+      "summary": "글자 안에 그라디언트 색상 적용",
+      "demo": "loop",
+      "desc": [
+        "글자 안에 여러 색이",
+        "물감처럼 섞여서 흘러요"
+      ],
+      "uses": [
+        "여름 세일 같은 행사 이름",
+        "새로 나온 기능 이름을 돋보이게 할 때",
+        "화려한 느낌의 이벤트 페이지 제목"
+      ],
+      "tags": [
+        "#그라디언트텍스트",
+        "#GradientText",
+        "#무지개글자",
+        "#컬러풀"
+      ],
+      "aliases": [],
+      "prompt_vague": "글자에 여러 색이 섞이게 해줘",
+      "prompt_exact": "행사 제목을 그라디언트 텍스트로. 파랑→보라→분홍→주황, 4초에 한 바퀴 옆으로 천천히 흐르게",
+      "related": [
+        "shimmer-text",
+        "neon-glow",
+        "image-filled-text"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "shimmer-text",
+      "no": 9,
+      "category": "text",
+      "name_ko": "샤이니 텍스트",
+      "name_en": "Shimmer text",
+      "summary": "글자 위로 빛이 한 번 스쳐 지나감",
+      "demo": "loop",
+      "desc": [
+        "글자 위로 빛줄기가",
+        "반짝 하고 스쳐 지나가요"
+      ],
+      "uses": [
+        "'신상품' '한정판' 같은 문구",
+        "'불러오는 중이에요'를 알려줄 때",
+        "멤버십 등급처럼 고급스러워 보여야 할 때"
+      ],
+      "tags": [
+        "#샤이니텍스트",
+        "#Shimmer",
+        "#반짝효과",
+        "#빛나는글자"
+      ],
+      "aliases": [],
+      "prompt_vague": "글자가 반짝 빛나게 해줘",
+      "prompt_exact": "\"신상품\" 문구에 샤이니 텍스트 적용. 흰 빛줄기가 1.2초 동안 왼쪽에서 오른쪽으로 지나가고 1.4초 쉬었다 반복",
+      "related": [
+        "gradient-text",
+        "neon-glow",
+        "skeleton"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "outline-text",
+      "no": 10,
+      "category": "text",
+      "name_ko": "아웃라인 텍스트",
+      "name_en": "Outline text",
+      "summary": "속이 빈 외곽선만 있는 글자",
+      "demo": "loop",
+      "desc": [
+        "글자 속은 비우고",
+        "테두리 선만 남겨서 보여줘요"
+      ],
+      "uses": [
+        "포스터처럼 커다란 영어 제목",
+        "배경에 큰 글씨를 은은하게 깔 때",
+        "꽉 찬 글자와 섞어 리듬감을 줄 때"
+      ],
+      "tags": [
+        "#아웃라인텍스트",
+        "#OutlineText",
+        "#테두리글자",
+        "#속빈글자"
+      ],
+      "aliases": [],
+      "prompt_vague": "글자 속이 비어 있게 해줘",
+      "prompt_exact": "큰 영어 제목은 아웃라인 텍스트로. 속은 투명, 테두리 1.5px 검정. 옆 줄은 꽉 찬 글자로 섞어서",
+      "related": [
+        "gradient-text",
+        "bold-typography",
+        "image-filled-text"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "glitch",
+      "no": 11,
+      "category": "text",
+      "name_ko": "글리치",
+      "name_en": "Glitch",
+      "summary": "화면이 깨진 듯 지직거리며 어긋나는 효과",
+      "demo": "loop",
+      "desc": [
+        "화면이 고장 난 것처럼",
+        "글자가 지지직 어긋나요"
+      ],
+      "uses": [
+        "'페이지를 찾을 수 없어요' 오류 화면",
+        "게임·음악처럼 강렬한 분위기",
+        "신제품 공개 전에 궁금하게 만들 때"
+      ],
+      "tags": [
+        "#글리치",
+        "#Glitch",
+        "#지지직효과",
+        "#오류화면"
+      ],
+      "aliases": [],
+      "prompt_vague": "글자가 고장 난 것처럼 지지직거리게 해줘",
+      "prompt_exact": "404 제목에 글리치 효과. 3초에 세 번, 빨강·하늘색 글자가 좌우로 몇 px씩 어긋나며 가로로 잘리게",
+      "related": [
+        "text-scramble",
+        "neon-glow",
+        "error-page"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "wave-text",
+      "no": 12,
+      "category": "text",
+      "name_ko": "웨이브 텍스트",
+      "name_en": "Wave text",
+      "summary": "글자가 파도처럼 위아래로 출렁임",
+      "demo": "loop",
+      "desc": [
+        "글자들이 파도를 타듯",
+        "차례로 위아래로 출렁여요"
+      ],
+      "uses": [
+        "'두근두근' 같은 신나는 문구",
+        "아이들 대상 이벤트 페이지",
+        "기다리는 동안 보여주는 '잠시만요'"
+      ],
+      "tags": [
+        "#웨이브텍스트",
+        "#WaveText",
+        "#물결효과",
+        "#통통튀는글자"
+      ],
+      "aliases": [],
+      "prompt_vague": "글자가 출렁출렁 움직이게 해줘",
+      "prompt_exact": "문구에 웨이브 텍스트 적용. 글자마다 위아래 10px, 1.4초 주기로 파도처럼 차례로 출렁이게",
+      "related": [
+        "split-text",
+        "bounce",
+        "pulse"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "animated-underline",
+      "no": 13,
+      "category": "text",
+      "name_ko": "밑줄 애니메이션",
+      "name_en": "Animated underline",
+      "summary": "호버 시 밑줄이 좌→우로 그어짐",
+      "demo": "loop",
+      "desc": [
+        "메뉴에 마우스를 올리면",
+        "밑줄이 왼쪽부터 쓱 그어져요"
+      ],
+      "uses": [
+        "홈페이지 맨 위 메뉴",
+        "글 중간에 있는 링크",
+        "'더 알아보기' 같은 글자 버튼"
+      ],
+      "tags": [
+        "#밑줄애니메이션",
+        "#AnimatedUnderline",
+        "#링크효과",
+        "#메뉴"
+      ],
+      "aliases": [],
+      "prompt_vague": "메뉴에 마우스 올리면 밑줄 생기게 해줘",
+      "prompt_exact": "위 메뉴 링크에 밑줄 애니메이션. 마우스를 올리면 파란 밑줄(3px)이 왼쪽부터 0.4초 동안 그어지고, 떼면 오른쪽으로 빠져나가게",
+      "related": [
+        "hover-effect",
+        "highlighter-animation",
+        "global-navigation-bar"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "odometer",
+      "no": 14,
+      "category": "text",
+      "name_ko": "오도미터",
+      "name_en": "Odometer",
+      "summary": "숫자가 계기판처럼 굴러가며 바뀜",
+      "demo": "loop",
+      "desc": [
+        "숫자가 자동차 계기판처럼",
+        "또르르 굴러가며 바뀌어요"
+      ],
+      "uses": [
+        "누적 후원 금액이나 가입자 수",
+        "실시간으로 바뀌는 주식 가격",
+        "남은 수량이나 응모한 사람 수"
+      ],
+      "tags": [
+        "#오도미터",
+        "#Odometer",
+        "#숫자롤링",
+        "#카운터"
+      ],
+      "aliases": [],
+      "prompt_vague": "숫자가 굴러가면서 바뀌게 해줘",
+      "prompt_exact": "금액에 오도미터 적용. 자리마다 숫자 띠가 위로 굴러가며 바뀌고, 오른쪽 자리부터 0.06초씩 늦게 멈추게",
+      "related": [
+        "count-up",
+        "text-scramble",
+        "kpi-row"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "neon-glow",
+      "no": 15,
+      "category": "text",
+      "name_ko": "네온 텍스트",
+      "name_en": "Neon glow",
+      "summary": "글자 주변에 빛 번짐 효과",
+      "demo": "loop",
+      "desc": [
+        "간판 네온사인처럼",
+        "글자 주변이 환하게 번져요"
+      ],
+      "uses": [
+        "밤 분위기의 가게·공연 홍보",
+        "어두운 배경의 게임 화면",
+        "'OPEN'처럼 멀리서도 보여야 하는 표시"
+      ],
+      "tags": [
+        "#네온텍스트",
+        "#NeonGlow",
+        "#빛번짐",
+        "#간판효과"
+      ],
+      "aliases": [],
+      "prompt_vague": "간판처럼 빛나는 글자로 해줘",
+      "prompt_exact": "어두운 배경 위 \"OPEN\"에 네온 텍스트. 분홍(#FF4FD8) 빛이 글자 주변으로 번지고, 처음 켜질 때 두 번 깜빡이게",
+      "related": [
+        "gradient-text",
+        "glitch",
+        "dark-mode"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "text-on-path",
+      "no": 16,
+      "category": "text",
+      "name_ko": "패스 텍스트",
+      "name_en": "Text on path",
+      "summary": "곡선·원형 경로를 따라 배치된 글자",
+      "demo": "loop",
+      "desc": [
+        "글자가 일자로 서지 않고",
+        "동그란 길을 따라 놓여요"
+      ],
+      "uses": [
+        "도장이나 배지처럼 동그란 로고",
+        "빙글빙글 도는 '아래로 내려보세요' 표시",
+        "곡선 위에 얹은 꾸밈 문구"
+      ],
+      "tags": [
+        "#패스텍스트",
+        "#TextOnPath",
+        "#원형텍스트",
+        "#회전글자"
+      ],
+      "aliases": [],
+      "prompt_vague": "글자를 동그랗게 둘러서 돌게 해줘",
+      "prompt_exact": "동그란 배지에 패스 텍스트. \"아래로 내려보세요\"를 지름 110px 원을 따라 배치하고 8초에 한 바퀴 돌게. 가운데 아래 화살표",
+      "related": [
+        "rotating-text",
+        "back-to-top",
+        "marquee"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "variable-font-animation",
+      "no": 17,
+      "category": "text",
+      "name_ko": "가변 폰트 애니메이션",
+      "name_en": "Variable font animation",
+      "summary": "굵기·폭이 부드럽게 변함",
+      "demo": "loop",
+      "desc": [
+        "글자 굵기가",
+        "얇게, 굵게 부드럽게 변해요"
+      ],
+      "uses": [
+        "마우스를 올리면 굵어지는 제목",
+        "숨 쉬듯 움직이는 브랜드 이름",
+        "강약이 느껴지는 광고 문구"
+      ],
+      "tags": [
+        "#가변폰트",
+        "#VariableFont",
+        "#굵기변화",
+        "#글자애니메이션"
+      ],
+      "aliases": [],
+      "prompt_vague": "글자 굵기가 변하게 해줘",
+      "prompt_exact": "제목에 가변 폰트 애니메이션. Pretendard Variable로 굵기 100↔900을 3초 주기로 부드럽게 오가게",
+      "related": [
+        "bold-typography",
+        "wave-text",
+        "pulse"
+      ],
+      "status": "final"
+    },
+    {
+      "slug": "image-filled-text",
+      "no": 18,
+      "category": "text",
+      "name_ko": "이미지 필 텍스트",
+      "name_en": "Image-filled text",
+      "summary": "글자 안을 이미지·영상으로 채움",
+      "demo": "loop",
+      "desc": [
+        "글자 모양 안에",
+        "사진이나 영상을 채워 넣어요"
+      ],
+      "uses": [
+        "여행지 이름 안에 바다 사진",
+        "브랜드 이름 안에 제품 영상",
+        "큰 제목 하나로 포스터처럼 꾸밀 때"
+      ],
+      "tags": [
+        "#이미지필텍스트",
+        "#ImageFilledText",
+        "#사진글자",
+        "#영상글자"
+      ],
+      "aliases": [],
+      "prompt_vague": "글자 안에 사진을 넣어줘",
+      "prompt_exact": "\"바다\" 제목을 이미지 필 텍스트로. 굵은 글자 모양 안에 바다 사진을 채우고 바깥은 투명하게",
+      "related": [
+        "gradient-text",
+        "outline-text",
+        "full-bleed"
+      ],
+      "status": "final"
+    }
+  ]
+}

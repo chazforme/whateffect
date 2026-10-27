@@ -1,103 +1,48 @@
-import Image from "next/image";
+import PauseToggle from "@/components/PauseToggle";
+import TopicCard from "@/components/TopicCard";
+import { terms } from "@/lib/data";
+import { topicMeta } from "@/lib/topics";
+
+const STEPS = [
+  ["보고", "움직이는 예시를 보고 원하는 효과를 찾아요"],
+  ["고르고", "카드에서 효과의 정확한 이름을 확인해요"],
+  ["말하기", "그 이름으로 AI에게 정확하게 시켜요"],
+];
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="mx-auto max-w-[1080px]">
+      <header className="mb-7 flex flex-wrap items-end gap-3">
+        <div>
+          <div className="text-[13px] font-bold tracking-[.02em] text-accent">효과사전</div>
+          <h1 className="mt-1.5 text-[26px] font-extrabold tracking-[-.02em]">AI에게 이름으로 말하는 웹 효과</h1>
+          <p className="mt-1.5 text-sm break-keep text-sub">
+            홈페이지·카드뉴스·상세페이지·대시보드·발표자료를 만들 때 · 주제 10개, 효과 {terms.length}개
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="ml-auto">
+          <PauseToggle />
+        </div>
+      </header>
+
+      <ol className="mb-7 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2.5">
+        {STEPS.map(([title, body], i) => (
+          <li key={title} className="flex items-center gap-3 rounded-2xl bg-white/70 px-4 py-3">
+            <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-accent text-[13px] font-extrabold text-white">
+              {i + 1}
+            </span>
+            <span className="text-[13.5px] break-keep text-[#3A4152]">
+              <b className="font-extrabold text-ink">{title}</b> · {body}
+            </span>
+          </li>
+        ))}
+      </ol>
+
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-[18px]">
+        {topicMeta.map((meta, i) => (
+          <TopicCard key={meta.id} meta={meta} index={i} />
+        ))}
+      </div>
     </div>
   );
 }

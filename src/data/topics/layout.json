@@ -1,0 +1,380 @@
+[
+  {
+    "slug": "hero-section",
+    "no": 1,
+    "category": "layout",
+    "name_ko": "히어로 섹션",
+    "name_en": "Hero section",
+    "summary": "페이지 맨 위, 첫 화면을 꽉 채우는 큰 제목·이미지·버튼 영역",
+    "demo": "static",
+    "desc": ["들어오자마자 보이는 첫 화면이에요", "큰 제목과 버튼 하나로 핵심만 말해요"],
+    "uses": [
+      "쇼핑몰 첫 화면의 '봄 신상 50%' 큰 배너",
+      "새 앱을 소개하는 홈페이지 맨 위",
+      "행사·캠페인 안내 페이지의 첫인상"
+    ],
+    "tags": ["#히어로섹션", "#HeroSection", "#페이지구성", "#홈페이지첫화면"],
+    "aliases": ["메인 배너", "키 비주얼", "첫 화면"],
+    "prompt_vague": "홈페이지 들어가면 맨 위에 크게 뭐 하나 딱 보이게 해줘",
+    "prompt_exact": "맨 위에 히어로 섹션을 넣어줘. 화면 높이의 80%, 가운데에 제목 48px·부제 18px, 그 아래 '지금 보러가기' 버튼 하나. 배경은 연한 파랑 그라데이션, 아래 내용이 살짝 보이게",
+    "related": ["full-bleed", "split-screen", "container-width"],
+    "status": "final"
+  },
+  {
+    "slug": "container-width",
+    "no": 2,
+    "category": "layout",
+    "name_ko": "본문 폭 제한",
+    "name_en": "Max-width container",
+    "summary": "넓은 화면에서도 내용은 가운데 정해진 최대 폭 안에만 배치",
+    "demo": "static",
+    "desc": ["화면이 아무리 넓어도", "글은 가운데 일정한 폭 안에만 놓여요"],
+    "uses": [
+      "뉴스 기사를 큰 모니터로 읽을 때 줄이 너무 길지 않게",
+      "회사 공지사항·블로그 글 페이지",
+      "문서를 웹페이지로 옮길 때 읽기 편한 폭 맞추기"
+    ],
+    "tags": ["#본문폭제한", "#MaxWidthContainer", "#페이지구성", "#읽기편한폭"],
+    "aliases": ["컨테이너", "최대 너비", "가운데 정렬 본문"],
+    "prompt_vague": "큰 모니터에서 보면 글이 너무 옆으로 퍼져. 가운데로 좀 모아줘",
+    "prompt_exact": "본문은 max-width 1200px 컨테이너로 가운데 정렬해줘. 양옆 여백은 최소 24px, 긴 글 영역은 720px로 더 좁게",
+    "related": ["full-bleed", "whitespace", "responsive"],
+    "status": "final"
+  },
+  {
+    "slug": "full-bleed",
+    "no": 3,
+    "category": "layout",
+    "name_ko": "풀블리드",
+    "name_en": "Full-bleed",
+    "summary": "여백 없이 화면 왼쪽 끝부터 오른쪽 끝까지 꽉 채운 이미지·배경",
+    "demo": "static",
+    "desc": ["사진이나 배경이 옆 여백 없이", "화면 끝에서 끝까지 꽉 차요"],
+    "uses": [
+      "호텔 홈페이지의 탁 트인 바다 사진",
+      "상세페이지 중간에 분위기 바꾸는 큰 사진 한 장",
+      "잡지처럼 글 사이에 넓은 사진 넣을 때"
+    ],
+    "tags": ["#풀블리드", "#FullBleed", "#페이지구성", "#큰사진"],
+    "aliases": ["화면 꽉 채우기", "전체 폭 이미지"],
+    "prompt_vague": "사진이 양옆에 하얀 데 없이 끝까지 쭉 찼으면 좋겠어",
+    "prompt_exact": "글은 1200px 폭 안에 두고, 중간 사진 영역만 풀블리드로 화면 폭 100%까지 꽉 채워줘. 높이 480px, 사진은 잘리더라도 비율 유지(cover)",
+    "related": ["container-width", "hero-section", "detail-page"],
+    "status": "final"
+  },
+  {
+    "slug": "whitespace",
+    "no": 4,
+    "category": "layout",
+    "name_ko": "여백",
+    "name_en": "Whitespace",
+    "summary": "요소 사이·바깥의 빈 공간을 넉넉히 두어 정돈되고 고급스럽게 보이게 함",
+    "demo": "static",
+    "desc": ["같은 내용도 빈 공간을 넉넉히 두면", "훨씬 깔끔하고 읽기 쉬워져요"],
+    "uses": [
+      "명품 브랜드 홈페이지가 시원해 보이는 이유",
+      "글이 빽빽한 안내문을 읽기 쉽게 고칠 때",
+      "카드뉴스 한 장에 글을 너무 많이 넣었을 때"
+    ],
+    "tags": ["#여백", "#Whitespace", "#디자인기본", "#깔끔하게"],
+    "aliases": ["화이트 스페이스", "네거티브 스페이스", "숨 쉴 공간"],
+    "prompt_vague": "너무 답답해 보여. 좀 시원하게 해줘",
+    "prompt_exact": "여백을 넉넉하게: 카드 안쪽 패딩 24px, 요소 사이 간격 16px, 영역과 영역 사이는 96px. 글은 줄 간격 1.6으로 하고 한 화면에 핵심 하나만",
+    "related": ["container-width", "split-screen", "aspect-ratio"],
+    "status": "final"
+  },
+  {
+    "slug": "split-screen",
+    "no": 5,
+    "category": "layout",
+    "name_ko": "좌우 분할",
+    "name_en": "Split screen",
+    "summary": "화면을 반으로 나눠 한쪽은 이미지, 다른 쪽은 글·버튼",
+    "demo": "static",
+    "desc": ["화면을 반으로 딱 나눠", "한쪽은 사진, 한쪽은 글을 놓아요"],
+    "uses": [
+      "옷 쇼핑몰의 '새 시즌 컬렉션' 소개",
+      "로그인 화면에서 한쪽에 큰 사진 둘 때",
+      "발표자료에서 사진과 설명을 나란히 보여줄 때"
+    ],
+    "tags": ["#좌우분할", "#SplitScreen", "#페이지구성", "#사진과글"],
+    "aliases": ["스플릿 화면", "반반 화면", "2단 구성"],
+    "prompt_vague": "왼쪽엔 사진, 오른쪽엔 글 이렇게 반반으로 해줘",
+    "prompt_exact": "좌우 분할 50:50으로. 왼쪽은 사진이 칸을 꽉 채우고, 오른쪽은 세로 가운데에 작은 라벨·제목 36px·설명 2줄·버튼. 휴대폰에선 사진 위, 글 아래로 쌓기",
+    "related": ["zigzag-layout", "hero-section", "responsive"],
+    "status": "final"
+  },
+  {
+    "slug": "zigzag-layout",
+    "no": 6,
+    "category": "layout",
+    "name_ko": "지그재그 배치",
+    "name_en": "Zigzag layout",
+    "summary": "사진-글, 글-사진 순서를 줄마다 번갈아 배치",
+    "demo": "static",
+    "desc": ["사진과 글의 자리를 줄마다 바꿔", "왼쪽 오른쪽 번갈아 내려가요"],
+    "uses": [
+      "제품 장점을 ①②③ 순서로 소개할 때",
+      "상세페이지에서 기능을 하나씩 설명할 때",
+      "회사 소개의 '우리가 하는 일' 부분"
+    ],
+    "tags": ["#지그재그배치", "#ZigzagLayout", "#페이지구성", "#장점소개"],
+    "aliases": ["교차 배치", "Z자 배치", "번갈아 배치"],
+    "prompt_vague": "사진이랑 설명을 한 번은 왼쪽 한 번은 오른쪽 이렇게 번갈아 넣어줘",
+    "prompt_exact": "장점 3개를 지그재그 배치로. 각 줄은 사진 50%·글 50%, 짝수 줄은 좌우를 뒤집고 줄 사이 간격 80px. 휴대폰에선 모두 사진 위·글 아래로",
+    "related": ["split-screen", "detail-page", "card-grid"],
+    "status": "final"
+  },
+  {
+    "slug": "card-grid",
+    "no": 7,
+    "category": "layout",
+    "name_ko": "카드 그리드",
+    "name_en": "Card grid",
+    "summary": "같은 크기의 카드를 가로·세로 줄 맞춰 반복 배치",
+    "demo": "static",
+    "desc": ["크기가 같은 카드를", "칸을 나눠 줄 맞춰 늘어놓아요"],
+    "uses": [
+      "쇼핑몰 상품 목록",
+      "배달앱의 가게 목록, 넷플릭스 작품 목록",
+      "회의 요약을 주제별 카드로 정리할 때"
+    ],
+    "tags": ["#카드그리드", "#CardGrid", "#페이지구성", "#상품목록"],
+    "aliases": ["바둑판 배열", "격자 목록", "타일"],
+    "prompt_vague": "상품을 네모 칸에 쭉 줄 맞춰서 보여줘",
+    "prompt_exact": "상품은 카드 그리드로. PC 4열·태블릿 2열·휴대폰 1열, 카드 간격 16px. 카드마다 1:1 사진, 상품명 1줄, 가격 굵게. 카드 높이는 모두 같게",
+    "related": ["bento-grid", "masonry", "responsive"],
+    "status": "final"
+  },
+  {
+    "slug": "bento-grid",
+    "no": 8,
+    "category": "layout",
+    "name_ko": "벤토 그리드",
+    "name_en": "Bento grid",
+    "summary": "크기가 제각각인 칸을 도시락처럼 빈틈없이 짜 맞춘 배치",
+    "demo": "static",
+    "desc": ["크고 작은 칸을 도시락처럼", "빈틈없이 맞춰 끼워 넣어요"],
+    "uses": [
+      "애플 같은 신제품 기능 소개 페이지",
+      "포트폴리오에서 대표작은 크게, 나머지는 작게",
+      "대시보드에서 중요한 숫자만 큰 칸에"
+    ],
+    "tags": ["#벤토그리드", "#BentoGrid", "#페이지구성", "#기능소개"],
+    "aliases": ["벤토 박스", "도시락 배치"],
+    "prompt_vague": "애플 홈페이지처럼 크고 작은 네모들이 퍼즐처럼 들어간 거",
+    "prompt_exact": "기능 소개를 벤토 그리드로. 4열×3행, 대표 기능은 2×2 크게, 나머지는 2×1·1×1·1×2로 섞고 간격 12px, 칸 모서리 둥글게 20px",
+    "related": ["card-grid", "masonry", "kpi-row"],
+    "status": "final"
+  },
+  {
+    "slug": "masonry",
+    "no": 9,
+    "category": "layout",
+    "name_ko": "메이슨리",
+    "name_en": "Masonry",
+    "summary": "열 폭은 같고 높이는 제각각인 카드를 벽돌처럼 엇갈려 쌓음",
+    "demo": "static",
+    "desc": ["사진마다 높이가 달라도", "빈틈없이 벽돌처럼 쌓아 올려요"],
+    "uses": [
+      "핀터레스트에서 사진 구경할 때",
+      "인스타 같은 사진 모음, 후기 사진 모아보기",
+      "카드뉴스·포스터 시안을 한 페이지에 모아 볼 때"
+    ],
+    "tags": ["#메이슨리", "#Masonry", "#페이지구성", "#사진모음"],
+    "aliases": ["핀터레스트형", "벽돌 쌓기", "폭포형 목록"],
+    "prompt_vague": "핀터레스트처럼 사진 길이 다른 게 엇갈려 쌓이게 해줘",
+    "prompt_exact": "사진 목록은 메이슨리로. 3열(휴대폰 2열), 간격 12px, 사진은 원래 비율 그대로 두고 높이가 달라도 위로 빈틈없이 채우기",
+    "related": ["card-grid", "bento-grid", "responsive"],
+    "status": "final"
+  },
+  {
+    "slug": "responsive",
+    "no": 10,
+    "category": "layout",
+    "name_ko": "반응형",
+    "name_en": "Responsive",
+    "summary": "화면 폭에 따라 열 수·배치가 자동으로 바뀜 (PC·태블릿·휴대폰)",
+    "demo": "loop",
+    "desc": ["PC·태블릿·휴대폰 화면 크기에 맞춰", "한 줄에 놓이는 개수가 알아서 바뀌어요"],
+    "uses": [
+      "같은 쇼핑몰을 PC와 휴대폰으로 볼 때",
+      "휴대폰에서 글씨가 너무 작아지지 않게",
+      "만든 대시보드를 휴대폰으로도 확인할 때"
+    ],
+    "tags": ["#반응형", "#Responsive", "#화면크기대응", "#모바일대응"],
+    "aliases": ["반응형 웹", "모바일 대응"],
+    "prompt_vague": "휴대폰으로 열어도 안 깨지게 해줘",
+    "prompt_exact": "반응형으로 만들어줘. 1024px 이상 3열, 640~1023px 2열, 640px 미만 1열. 휴대폰에선 글자 최소 15px, 좌우 여백 16px, 가로 스크롤 생기지 않게",
+    "related": ["card-grid", "container-width", "split-screen"],
+    "status": "final"
+  },
+  {
+    "slug": "detail-page",
+    "no": 11,
+    "category": "layout",
+    "name_ko": "상세페이지 구성",
+    "name_en": "Product detail page",
+    "summary": "대표 사진→핵심→장점→사용법→후기→구매 순으로 길게 내려가는 세로 구성",
+    "demo": "static",
+    "desc": ["위에서 아래로 길게 내려가며", "사진·장점·후기 순서로 설득해요"],
+    "uses": [
+      "쿠팡·스마트스토어 상품 상세 화면",
+      "홈쇼핑처럼 순서대로 설명하는 제품 소개",
+      "새 상품 상세페이지를 처음 짤 때 순서 잡기"
+    ],
+    "tags": ["#상세페이지구성", "#ProductDetailPage", "#페이지구성", "#상세페이지"],
+    "aliases": ["상세페이지", "상페", "랜딩페이지"],
+    "prompt_vague": "쇼핑몰 상품 설명 페이지처럼 길게 쭉 내려가게 만들어줘",
+    "prompt_exact": "폭 860px 세로형 상세페이지로. 순서: ①대표 사진 ②한 줄 핵심 문구 ③장점 3가지(지그재그) ④사용 방법 3단계 ⑤구매 후기 ⑥구매 버튼. 구매 버튼은 맨 아래에도 한 번 더",
+    "related": ["zigzag-layout", "full-bleed", "comparison-table"],
+    "status": "final"
+  },
+  {
+    "slug": "comparison-table",
+    "no": 12,
+    "category": "layout",
+    "name_ko": "요금 비교표",
+    "name_en": "Pricing table",
+    "summary": "요금제·상품을 나란히 세워 항목별로 비교하고 추천안을 강조",
+    "demo": "static",
+    "desc": ["요금제를 나란히 세워", "무엇이 다른지 한눈에 비교해요"],
+    "uses": [
+      "통신사·OTT 요금제 고를 때",
+      "넷플릭스 '베이직·스탠다드·프리미엄' 화면",
+      "제안서에서 A안·B안·C안 비교할 때"
+    ],
+    "tags": ["#요금비교표", "#PricingTable", "#비교정리", "#요금제"],
+    "aliases": ["가격표", "플랜 비교", "비교표"],
+    "prompt_vague": "요금제 3개를 나란히 놓고 차이 보이게 해줘",
+    "prompt_exact": "요금 비교표로. 3열 나란히, 가운데 '프로'만 파란 테두리 2px·'추천' 배지·살짝 크게. 각 열에 이름·가격(크게)·포함 항목 ✓ 목록·선택 버튼, 없는 항목은 회색 '–'",
+    "related": ["data-table", "card-grid", "detail-page"],
+    "status": "final"
+  },
+  {
+    "slug": "timeline",
+    "no": 13,
+    "category": "layout",
+    "name_ko": "타임라인",
+    "name_en": "Timeline",
+    "summary": "한 줄 위에 시간 순서대로 점을 찍어 사건·단계를 나열",
+    "demo": "static",
+    "desc": ["한 줄 위에 시간 순서대로", "있었던 일을 점으로 찍어 보여줘요"],
+    "uses": [
+      "회사 소개의 '걸어온 길' 연혁",
+      "택배 배송 현황, 주문 진행 단계",
+      "프로젝트 일정을 발표자료로 보여줄 때"
+    ],
+    "tags": ["#타임라인", "#Timeline", "#정보정리", "#연혁"],
+    "aliases": ["연혁", "로드맵", "진행 단계"],
+    "prompt_vague": "연도별로 있었던 일을 줄 하나에 쭉 이어서 보여줘",
+    "prompt_exact": "가로 타임라인으로. 선 하나에 점 4개를 같은 간격으로, 점 위엔 연도(굵게 20px), 아래엔 한 줄 설명. 최신 항목만 파란색으로 채우기. 휴대폰에선 세로 타임라인으로",
+    "related": ["slide-layout", "data-table", "zigzag-layout"],
+    "status": "final"
+  },
+  {
+    "slug": "sidebar-layout",
+    "no": 14,
+    "category": "layout",
+    "name_ko": "사이드바 레이아웃",
+    "name_en": "Sidebar layout",
+    "summary": "왼쪽에 고정된 세로 메뉴, 오른쪽 넓은 영역에 내용 — 관리자·대시보드형",
+    "demo": "static",
+    "desc": ["왼쪽에 메뉴가 늘 세로로 있고", "오른쪽 넓은 곳에 내용이 바뀌어요"],
+    "uses": [
+      "쇼핑몰 관리자 화면, 은행 기업뱅킹",
+      "노션·메일함처럼 왼쪽에 목록 있는 화면",
+      "매출 모니터링 대시보드 만들 때"
+    ],
+    "tags": ["#사이드바레이아웃", "#SidebarLayout", "#화면구성", "#대시보드"],
+    "aliases": ["관리자 화면", "어드민 화면", "왼쪽 메뉴"],
+    "prompt_vague": "관리자 페이지처럼 왼쪽에 메뉴 쭉 있고 오른쪽에 내용 나오게",
+    "prompt_exact": "사이드바 레이아웃으로. 왼쪽 220px 진한 남색 세로 메뉴(홈·매출·고객·광고·설정), 선택된 메뉴는 파란 배경. 오른쪽은 위에 페이지 제목, 아래 내용. 휴대폰에선 메뉴를 ☰ 버튼 안으로",
+    "related": ["kpi-row", "data-table", "responsive"],
+    "status": "final"
+  },
+  {
+    "slug": "kpi-row",
+    "no": 15,
+    "category": "layout",
+    "name_ko": "KPI 카드",
+    "name_en": "KPI cards",
+    "summary": "대시보드 맨 위에 핵심 숫자를 카드 3~5개로 한 줄 배치, 증감 표시",
+    "demo": "static",
+    "desc": ["가장 중요한 숫자 몇 개를", "맨 위에 카드로 한 줄 세워요"],
+    "uses": [
+      "가게 사장님 앱의 '오늘 매출·주문 수'",
+      "은행 앱 첫 화면의 총자산·이번 달 지출",
+      "매일 보는 광고 성과 대시보드 맨 위"
+    ],
+    "tags": ["#KPI카드", "#KPICards", "#대시보드", "#핵심숫자"],
+    "aliases": ["스탯 카드", "요약 카드", "숫자 카드"],
+    "prompt_vague": "대시보드 맨 위에 중요한 숫자들 크게 보이게 해줘",
+    "prompt_exact": "맨 위에 KPI 카드 4개를 한 줄로: 오늘 매출·주문·방문자·구매 전환. 카드마다 작은 이름 12px, 숫자 28px 굵게, 아래 전일 대비 ▲빨강/▼파랑 %. 휴대폰에선 2×2",
+    "related": ["sidebar-layout", "data-table", "bento-grid"],
+    "status": "final"
+  },
+  {
+    "slug": "data-table",
+    "no": 16,
+    "category": "layout",
+    "name_ko": "데이터 표",
+    "name_en": "Data table",
+    "summary": "머리줄·줄무늬·오른쪽 정렬 숫자·합계 줄을 갖춘 읽기 쉬운 숫자 표",
+    "demo": "static",
+    "desc": ["칸과 줄을 반듯하게 맞춰", "숫자를 한눈에 비교하게 해요"],
+    "uses": [
+      "카드사 앱의 월별 사용 내역",
+      "엑셀 보고서를 웹 화면으로 옮길 때",
+      "매체별 광고비·클릭 수 모니터링 표"
+    ],
+    "tags": ["#데이터표", "#DataTable", "#정보정리", "#보고서"],
+    "aliases": ["테이블", "표", "데이터 그리드"],
+    "prompt_vague": "엑셀처럼 숫자 정리된 표로 보여줘",
+    "prompt_exact": "데이터 표로. 머리줄은 진한 남색 배경·흰 글자로 고정, 줄마다 번갈아 연회색, 숫자는 오른쪽 정렬·천 단위 쉼표·자릿수 맞춤, 맨 아래 합계 줄 굵게. 머리줄 누르면 정렬",
+    "related": ["kpi-row", "comparison-table", "sidebar-layout"],
+    "status": "final"
+  },
+  {
+    "slug": "aspect-ratio",
+    "no": 17,
+    "category": "layout",
+    "name_ko": "화면 비율",
+    "name_en": "Aspect ratio",
+    "summary": "가로:세로 비율 규격 — 1:1·4:5(인스타)·9:16(쇼츠)·16:9(슬라이드)",
+    "demo": "loop",
+    "desc": ["가로와 세로의 비율이에요", "어디에 올리느냐에 따라 맞춰야 해요"],
+    "uses": [
+      "인스타 피드는 1:1이나 4:5",
+      "릴스·쇼츠는 세로로 긴 9:16",
+      "카드뉴스·발표 슬라이드 크기 정할 때"
+    ],
+    "tags": ["#화면비율", "#AspectRatio", "#규격", "#카드뉴스"],
+    "aliases": ["비율", "사이즈 규격", "판형"],
+    "prompt_vague": "인스타에 올릴 거니까 거기 맞는 크기로 해줘",
+    "prompt_exact": "카드뉴스는 4:5 비율(1080×1350px)로, 슬라이드는 16:9(1920×1080px)로 고정해줘. 화면 폭이 바뀌어도 비율은 유지하고 글자는 바깥 5% 안쪽에만",
+    "related": ["slide-layout", "whitespace", "responsive"],
+    "status": "final"
+  },
+  {
+    "slug": "slide-layout",
+    "no": 18,
+    "category": "layout",
+    "name_ko": "슬라이드 구성",
+    "name_en": "Slide layout",
+    "summary": "16:9 발표 화면 한 장의 기본 짜임 — 제목·요점·도표·쪽번호",
+    "demo": "static",
+    "desc": ["발표 화면 한 장을 위 제목, 왼쪽 요점,", "오른쪽 그래프, 아래 쪽번호로 나눠요"],
+    "uses": [
+      "회사 회의 때 띄우는 보고 화면",
+      "PPT 발표자료를 웹페이지로 옮길 때",
+      "강의·세미나 자료 한 장 한 장"
+    ],
+    "tags": ["#슬라이드구성", "#SlideLayout", "#발표자료", "#PPT"],
+    "aliases": ["PPT 장표", "발표 화면", "덱"],
+    "prompt_vague": "PPT 한 장처럼 보이게 웹으로 만들어줘",
+    "prompt_exact": "16:9 슬라이드 구성으로. 바깥 여백 6%, 왼쪽 위 작은 목차명+제목 40px, 아래 왼쪽 60%엔 요점 3개, 오른쪽 40%엔 막대그래프, 맨 아래 왼쪽 출처·오른쪽 쪽번호 '3 / 12'",
+    "related": ["aspect-ratio", "split-screen", "kpi-row"],
+    "status": "final"
+  }
+]

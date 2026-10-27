@@ -1,0 +1,646 @@
+[
+  {
+    "slug": "hover-effect",
+    "no": 1,
+    "category": "micro",
+    "name_ko": "호버 이펙트",
+    "name_en": "Hover effect",
+    "summary": "마우스를 올리면 버튼·카드 모양이 바뀜",
+    "demo": "simulate",
+    "desc": [
+      "마우스를 올리면",
+      "버튼 색이 바뀌고 살짝 떠올라요"
+    ],
+    "uses": [
+      "쇼핑몰의 '장바구니 담기' 버튼",
+      "홈페이지에서 누를 수 있는 카드 표시할 때",
+      "메뉴 위에 마우스를 갖다 댔을 때"
+    ],
+    "tags": [
+      "#호버이펙트",
+      "#HoverEffect",
+      "#마우스반응",
+      "#버튼"
+    ],
+    "aliases": [
+      "마우스오버",
+      "롤오버"
+    ],
+    "prompt_vague": "마우스 올리면 버튼이 좀 반응하게 해줘",
+    "prompt_exact": "버튼에 호버 이펙트 넣어줘. 마우스를 올리면 0.2초 동안 배경이 파란색으로 채워지고, 위로 3px 떠오르며 그림자가 진해지게",
+    "related": [
+      "zoom-on-hover",
+      "press-state",
+      "animated-underline"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "zoom-on-hover",
+    "no": 2,
+    "category": "micro",
+    "name_ko": "호버 줌",
+    "name_en": "Zoom on hover",
+    "summary": "마우스를 올리면 사진만 틀 안에서 확대",
+    "demo": "simulate",
+    "desc": [
+      "상품 사진에 마우스를 올리면",
+      "사진이 틀 안에서 살짝 커져요"
+    ],
+    "uses": [
+      "쇼핑몰 상품 목록의 사진",
+      "블로그 글 목록의 대표 사진",
+      "상세페이지의 제품 사진 모음"
+    ],
+    "tags": [
+      "#호버줌",
+      "#ZoomOnHover",
+      "#사진확대",
+      "#상품목록"
+    ],
+    "aliases": [
+      "이미지 줌",
+      "확대 호버"
+    ],
+    "prompt_vague": "상품 사진에 마우스 올리면 사진이 커지게 해줘",
+    "prompt_exact": "상품 카드에 호버 줌 넣어줘. 마우스를 올리면 사진만 0.4초 동안 1.1배로 커지고, 카드 틀은 그대로라 밖으로 넘치지 않게 잘라줘",
+    "related": [
+      "hover-effect",
+      "hover-reveal",
+      "pinch-to-zoom"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "hover-reveal",
+    "no": 3,
+    "category": "micro",
+    "name_ko": "호버 리빌",
+    "name_en": "Hover reveal",
+    "summary": "마우스를 올리면 숨어 있던 설명·버튼이 드러남",
+    "demo": "simulate",
+    "desc": [
+      "평소엔 사진만 보이다가",
+      "마우스를 올리면 설명이 올라와요"
+    ],
+    "uses": [
+      "여행 상품 사진 위에 가격 보여줄 때",
+      "포트폴리오 작품에 제목 띄울 때",
+      "팀원 사진에 이름·직책 보여줄 때"
+    ],
+    "tags": [
+      "#호버리빌",
+      "#HoverReveal",
+      "#숨은정보",
+      "#포트폴리오"
+    ],
+    "aliases": [
+      "오버레이 호버"
+    ],
+    "prompt_vague": "사진에 마우스 올리면 설명 나오게 해줘",
+    "prompt_exact": "사진 카드에 호버 리빌 넣어줘. 평소엔 제목 한 줄만 보이고, 마우스를 올리면 어두운 판이 아래에서 0.3초 동안 올라오며 가격과 '자세히 보기' 버튼이 나타나게",
+    "related": [
+      "zoom-on-hover",
+      "hover-effect",
+      "spotlight-effect"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "spotlight-effect",
+    "no": 4,
+    "category": "micro",
+    "name_ko": "스포트라이트",
+    "name_en": "Spotlight effect",
+    "summary": "어두운 카드에서 커서 자리만 빛이 비침",
+    "demo": "simulate",
+    "desc": [
+      "어두운 화면 위에서",
+      "커서 자리만 손전등처럼 밝아요"
+    ],
+    "uses": [
+      "프리미엄 멤버십 소개 카드",
+      "신제품 공개 페이지의 어두운 첫 화면",
+      "요금제 비교 카드를 고급스럽게 보일 때"
+    ],
+    "tags": [
+      "#스포트라이트",
+      "#SpotlightEffect",
+      "#빛효과",
+      "#고급스러운카드"
+    ],
+    "aliases": [
+      "손전등 효과",
+      "마우스 글로우"
+    ],
+    "prompt_vague": "마우스 따라서 빛이 비치는 느낌 내줘",
+    "prompt_exact": "어두운 카드에 스포트라이트 효과 넣어줘. 커서 위치를 중심으로 반지름 80px짜리 파란 빛이 은은하게 비치고, 커서를 따라 바로 움직이게",
+    "related": [
+      "custom-cursor",
+      "3d-tilt",
+      "hover-reveal"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "3d-tilt",
+    "no": 5,
+    "category": "micro",
+    "name_ko": "틸트",
+    "name_en": "3D tilt",
+    "summary": "커서 방향으로 카드가 입체적으로 기울어짐",
+    "demo": "simulate",
+    "desc": [
+      "커서가 가는 쪽으로",
+      "카드가 입체적으로 기울어져요"
+    ],
+    "uses": [
+      "멤버십 카드·신용카드 보여줄 때",
+      "게임 캐릭터나 상품 카드 고를 때",
+      "상세페이지에서 제품을 돋보이게 할 때"
+    ],
+    "tags": [
+      "#틸트",
+      "#3DTilt",
+      "#입체효과",
+      "#카드"
+    ],
+    "aliases": [
+      "3D 카드",
+      "입체 카드"
+    ],
+    "prompt_vague": "카드에 마우스 올리면 입체적으로 움직이게 해줘",
+    "prompt_exact": "카드에 3D 틸트 넣어줘. 커서 위치에 따라 최대 15도까지 기울어지고, 커서 자리에 반짝이는 빛이 생기게. 마우스가 나가면 0.4초 동안 평평하게 돌아오게",
+    "related": [
+      "spotlight-effect",
+      "magnetic-button",
+      "hover-effect"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "magnetic-button",
+    "no": 6,
+    "category": "micro",
+    "name_ko": "마그네틱 버튼",
+    "name_en": "Magnetic button",
+    "summary": "커서가 가까이 오면 버튼이 끌려옴",
+    "demo": "simulate",
+    "desc": [
+      "커서가 가까이 가면",
+      "버튼이 자석처럼 끌려와요"
+    ],
+    "uses": [
+      "감각적인 브랜드 홈페이지의 '구독하기' 버튼",
+      "디자인 회사 포트폴리오 사이트",
+      "신제품 소개 페이지의 '사전 예약' 버튼"
+    ],
+    "tags": [
+      "#마그네틱버튼",
+      "#MagneticButton",
+      "#자석효과",
+      "#버튼"
+    ],
+    "aliases": [
+      "자석 버튼"
+    ],
+    "prompt_vague": "마우스 가까이 가면 버튼이 따라오게 해줘",
+    "prompt_exact": "버튼을 마그네틱 버튼으로 만들어줘. 커서가 버튼 중심 100px 안에 들어오면 커서 쪽으로 거리의 40%만큼 끌려오고, 벗어나면 0.4초 동안 제자리로 돌아오게",
+    "related": [
+      "3d-tilt",
+      "custom-cursor",
+      "hover-effect"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "custom-cursor",
+    "no": 7,
+    "category": "micro",
+    "name_ko": "커스텀 커서",
+    "name_en": "Custom cursor",
+    "summary": "화살표 대신 직접 만든 커서가 따라다님",
+    "demo": "simulate",
+    "desc": [
+      "기본 화살표 대신",
+      "동그라미 커서가 따라다녀요"
+    ],
+    "uses": [
+      "브랜드 느낌을 살린 홈페이지",
+      "사진에 올리면 '보기'가 뜨는 포트폴리오",
+      "전시·공연 소개 페이지"
+    ],
+    "tags": [
+      "#커스텀커서",
+      "#CustomCursor",
+      "#커서디자인",
+      "#브랜드사이트"
+    ],
+    "aliases": [
+      "커서 팔로워",
+      "마우스 커서 꾸미기"
+    ],
+    "prompt_vague": "마우스 화살표를 동그라미로 바꿔줘",
+    "prompt_exact": "커스텀 커서 넣어줘. 기본 화살표는 숨기고 8px 파란 점이 커서 자리에, 지름 26px 동그라미가 0.15초 늦게 따라오게. 사진 위에선 동그라미가 2배로 커지며 '보기'가 뜨게",
+    "related": [
+      "spotlight-effect",
+      "magnetic-button",
+      "hover-reveal"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "focus-ring",
+    "no": 8,
+    "category": "micro",
+    "name_ko": "포커스 링",
+    "name_en": "Focus ring",
+    "summary": "키보드로 고른 항목에 테두리가 생김",
+    "demo": "simulate",
+    "desc": [
+      "키보드 Tab을 누르면",
+      "지금 고른 버튼에 테두리가 생겨요"
+    ],
+    "uses": [
+      "마우스 없이 키보드로 로그인할 때",
+      "눈이 불편한 분도 쓰기 쉬운 홈페이지",
+      "회원가입 칸을 차례로 옮겨 다닐 때"
+    ],
+    "tags": [
+      "#포커스링",
+      "#FocusRing",
+      "#키보드이동",
+      "#접근성"
+    ],
+    "aliases": [
+      "포커스 표시",
+      "아웃라인"
+    ],
+    "prompt_vague": "키보드로 움직일 때 어디 있는지 보이게 해줘",
+    "prompt_exact": "버튼과 입력칸에 포커스 링 넣어줘. Tab으로 골랐을 때만 파란 3px 테두리를 2px 띄워서 두르고, 마우스로 누를 땐 안 보이게",
+    "related": [
+      "hover-effect",
+      "press-state"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "press-state",
+    "no": 9,
+    "category": "micro",
+    "name_ko": "프레스 효과",
+    "name_en": "Press state",
+    "summary": "누르는 동안 버튼이 쏙 들어감",
+    "demo": "simulate",
+    "desc": [
+      "버튼을 누르는 동안",
+      "살짝 작아지며 쏙 들어가요"
+    ],
+    "uses": [
+      "배달앱의 '주문하기' 버튼",
+      "은행 앱의 '보내기' 버튼",
+      "눌렸는지 헷갈리지 않게 하고 싶을 때"
+    ],
+    "tags": [
+      "#프레스효과",
+      "#PressState",
+      "#누름효과",
+      "#버튼"
+    ],
+    "aliases": [
+      "액티브 상태",
+      "눌림 효과"
+    ],
+    "prompt_vague": "버튼 누를 때 눌리는 느낌 나게 해줘",
+    "prompt_exact": "버튼에 프레스 효과 넣어줘. 누르는 동안 0.1초 만에 0.95배로 작아지고 조금 어두워지며 그림자가 줄고, 떼면 0.2초 동안 원래대로",
+    "related": [
+      "ripple",
+      "haptic-feedback",
+      "hover-effect"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "ripple",
+    "no": 10,
+    "category": "micro",
+    "name_ko": "리플",
+    "name_en": "Ripple",
+    "summary": "누른 자리에서 물결처럼 원이 퍼짐",
+    "demo": "simulate",
+    "desc": [
+      "누른 자리에서",
+      "물결 같은 원이 퍼져 나가요"
+    ],
+    "uses": [
+      "안드로이드 앱의 설정 목록",
+      "앱 안의 큰 버튼을 눌렀을 때",
+      "눌린 위치를 또렷하게 보여주고 싶을 때"
+    ],
+    "tags": [
+      "#리플",
+      "#Ripple",
+      "#물결효과",
+      "#터치반응"
+    ],
+    "aliases": [
+      "물결 효과",
+      "잉크 효과"
+    ],
+    "prompt_vague": "버튼 누르면 물결 퍼지는 거 해줘",
+    "prompt_exact": "버튼에 리플 효과 넣어줘. 누른 자리를 중심으로 반투명 파란 원이 0.6초 동안 버튼 끝까지 퍼지며 사라지게. 원은 버튼 밖으로 넘치지 않게",
+    "related": [
+      "press-state",
+      "like-burst",
+      "haptic-feedback"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "icon-morph",
+    "no": 11,
+    "category": "micro",
+    "name_ko": "아이콘 모프",
+    "name_en": "Icon morph",
+    "summary": "누르면 아이콘이 다른 모양으로 변신",
+    "demo": "simulate",
+    "desc": [
+      "누르면 아이콘이",
+      "다른 모양으로 스르륵 바뀌어요"
+    ],
+    "uses": [
+      "모바일 홈페이지의 메뉴 버튼(≡ → X)",
+      "음악 앱의 재생·일시정지 버튼",
+      "더하기(+)를 눌러 닫기(×)로 바뀔 때"
+    ],
+    "tags": [
+      "#아이콘모프",
+      "#IconMorph",
+      "#아이콘변신",
+      "#메뉴버튼"
+    ],
+    "aliases": [
+      "햄버거 애니메이션",
+      "아이콘 전환"
+    ],
+    "prompt_vague": "메뉴 버튼 누르면 X로 바뀌게 해줘",
+    "prompt_exact": "메뉴 버튼에 아이콘 모프 넣어줘. 누르면 줄 세 개 중 가운데는 사라지고 위·아래 줄이 0.3초 동안 45도씩 돌아 X가 되게. 다시 누르면 반대로",
+    "related": [
+      "like-burst",
+      "press-state",
+      "hover-effect"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "like-burst",
+    "no": 12,
+    "category": "micro",
+    "name_ko": "좋아요 버스트",
+    "name_en": "Like burst",
+    "summary": "하트를 누르면 팡 터지며 채워짐",
+    "demo": "simulate",
+    "desc": [
+      "하트를 톡 누르면",
+      "빨갛게 채워지며 팡 터져요"
+    ],
+    "uses": [
+      "인스타그램 게시물 좋아요",
+      "쇼핑몰 상품 찜하기",
+      "카드뉴스 끝에 '도움이 됐어요' 누를 때"
+    ],
+    "tags": [
+      "#좋아요버스트",
+      "#LikeBurst",
+      "#하트효과",
+      "#찜하기"
+    ],
+    "aliases": [
+      "하트 애니메이션",
+      "좋아요 효과"
+    ],
+    "prompt_vague": "좋아요 누르면 하트가 톡 터지게 해줘",
+    "prompt_exact": "좋아요 버튼에 좋아요 버스트 넣어줘. 누르면 하트가 0.7배로 줄었다가 1.2배로 튀며 빨갛게 채워지고, 주변으로 작은 점 8개가 0.5초 동안 퍼지며 사라지게. 숫자도 1 올라가게",
+    "related": [
+      "confetti",
+      "icon-morph",
+      "ripple"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "confetti",
+    "no": 13,
+    "category": "micro",
+    "name_ko": "컨페티",
+    "name_en": "Confetti",
+    "summary": "축하할 때 색종이가 팡 터져 흩날림",
+    "demo": "simulate",
+    "desc": [
+      "좋은 일이 생기면",
+      "색종이가 팡 터져 흩날려요"
+    ],
+    "uses": [
+      "결제나 주문을 마쳤을 때",
+      "이벤트 당첨·출석 도장 완성",
+      "목표 달성을 알리는 대시보드 화면"
+    ],
+    "tags": [
+      "#컨페티",
+      "#Confetti",
+      "#축하효과",
+      "#완료화면"
+    ],
+    "aliases": [
+      "색종이 효과",
+      "폭죽 효과"
+    ],
+    "prompt_vague": "완료되면 축하하는 느낌으로 뭐 터지게 해줘",
+    "prompt_exact": "주문 완료 화면에 컨페티 넣어줘. 버튼 자리에서 여러 색 색종이 30개가 위로 터졌다가 빙글빙글 돌며 2초 동안 떨어지고 사라지게",
+    "related": [
+      "like-burst",
+      "haptic-feedback"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "haptic-feedback",
+    "no": 14,
+    "category": "micro",
+    "name_ko": "햅틱 피드백",
+    "name_en": "Haptic feedback",
+    "summary": "누르면 폰이 짧게 진동함",
+    "demo": "simulate",
+    "desc": [
+      "버튼을 누르면 폰이",
+      "'드르륵' 짧게 떨려요"
+    ],
+    "uses": [
+      "결제 앱에서 결제가 끝났을 때",
+      "잘못 입력해서 알려줘야 할 때",
+      "휴대폰 키보드를 누를 때"
+    ],
+    "tags": [
+      "#햅틱피드백",
+      "#HapticFeedback",
+      "#진동",
+      "#모바일"
+    ],
+    "aliases": [
+      "진동 피드백",
+      "햅틱"
+    ],
+    "prompt_vague": "버튼 누르면 폰이 진동하게 해줘",
+    "prompt_exact": "결제 완료 버튼에 햅틱 피드백 넣어줘. 누르면 휴대폰이 30밀리초씩 두 번 짧게 진동하고, 진동이 안 되는 기기에선 그냥 넘어가게",
+    "related": [
+      "press-state",
+      "long-press",
+      "confetti"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "long-press",
+    "no": 15,
+    "category": "micro",
+    "name_ko": "롱프레스",
+    "name_en": "Long press",
+    "summary": "꾹 누르고 있으면 숨은 메뉴가 뜸",
+    "demo": "simulate",
+    "desc": [
+      "손가락으로 꾹 누르고 있으면",
+      "숨어 있던 메뉴가 떠요"
+    ],
+    "uses": [
+      "카카오톡 말풍선 복사·답장할 때",
+      "휴대폰 첫 화면 앱 아이콘 정리할 때",
+      "사진을 꾹 눌러 저장할 때"
+    ],
+    "tags": [
+      "#롱프레스",
+      "#LongPress",
+      "#꾹누르기",
+      "#모바일"
+    ],
+    "aliases": [
+      "길게 누르기",
+      "꾹 누르기"
+    ],
+    "prompt_vague": "꾹 누르면 메뉴 나오게 해줘",
+    "prompt_exact": "메시지에 롱프레스 넣어줘. 0.5초 동안 꾹 누르면 손가락 둘레에 동그라미가 차오르고, 다 차면 '복사·답장·삭제' 메뉴가 0.2초 동안 커지며 뜨게",
+    "related": [
+      "haptic-feedback",
+      "press-state",
+      "swipe-gesture"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "swipe-gesture",
+    "no": 16,
+    "category": "micro",
+    "name_ko": "스와이프 제스처",
+    "name_en": "Swipe gesture",
+    "summary": "손가락으로 밀면 숨은 버튼이 드러남",
+    "demo": "simulate",
+    "desc": [
+      "한 줄을 옆으로 쓱 밀면",
+      "뒤에 숨은 '삭제'가 보여요"
+    ],
+    "uses": [
+      "메일 앱에서 메일 지울 때",
+      "알림 목록 정리할 때",
+      "장바구니에서 상품 빼낼 때"
+    ],
+    "tags": [
+      "#스와이프제스처",
+      "#SwipeGesture",
+      "#밀어서삭제",
+      "#모바일"
+    ],
+    "aliases": [
+      "밀어서 삭제",
+      "스와이프"
+    ],
+    "prompt_vague": "옆으로 밀면 삭제 버튼 나오게 해줘",
+    "prompt_exact": "목록에 스와이프 제스처 넣어줘. 한 줄을 왼쪽으로 밀면 손가락을 따라 움직이고, 80px 넘게 밀면 빨간 '삭제' 버튼이 드러난 채 멈추게. 반대로 밀면 닫히게",
+    "related": [
+      "drag-and-drop",
+      "long-press",
+      "pinch-to-zoom"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "drag-and-drop",
+    "no": 17,
+    "category": "micro",
+    "name_ko": "드래그 앤 드롭",
+    "name_en": "Drag and drop",
+    "summary": "집어서 다른 곳으로 끌어다 놓음",
+    "demo": "simulate",
+    "desc": [
+      "항목을 집어서",
+      "원하는 칸으로 끌어다 놓아요"
+    ],
+    "uses": [
+      "할 일 목록을 '완료' 칸으로 옮길 때",
+      "파일을 끌어다 올릴 때",
+      "대시보드 칸 순서를 바꿀 때"
+    ],
+    "tags": [
+      "#드래그앤드롭",
+      "#DragAndDrop",
+      "#끌어다놓기",
+      "#할일관리"
+    ],
+    "aliases": [
+      "드래그",
+      "끌어다 놓기"
+    ],
+    "prompt_vague": "카드를 끌어서 옮길 수 있게 해줘",
+    "prompt_exact": "카드에 드래그 앤 드롭 넣어줘. 집으면 1.05배 커지고 살짝 기울며 그림자가 생기고, 놓을 자리엔 파란 점선 칸이 미리 보이게. 놓으면 0.2초 동안 제자리에 쏙 들어가게",
+    "related": [
+      "swipe-gesture",
+      "long-press",
+      "press-state"
+    ],
+    "status": "final"
+  },
+  {
+    "slug": "pinch-to-zoom",
+    "no": 18,
+    "category": "micro",
+    "name_ko": "핀치 줌",
+    "name_en": "Pinch to zoom",
+    "summary": "두 손가락을 벌리면 확대, 오므리면 축소",
+    "demo": "simulate",
+    "desc": [
+      "두 손가락을 벌리면 커지고",
+      "오므리면 다시 작아져요"
+    ],
+    "uses": [
+      "지도 앱에서 동네 크게 볼 때",
+      "상품 사진을 자세히 볼 때",
+      "휴대폰으로 표나 도면 문서 볼 때"
+    ],
+    "tags": [
+      "#핀치줌",
+      "#PinchToZoom",
+      "#두손가락확대",
+      "#지도"
+    ],
+    "aliases": [
+      "핀치",
+      "손가락 확대"
+    ],
+    "prompt_vague": "사진을 손가락으로 벌려서 크게 볼 수 있게 해줘",
+    "prompt_exact": "사진에 핀치 줌 넣어줘. 두 손가락을 벌린 만큼 최대 3배까지 커지고, 두 손가락 가운데를 중심으로 확대되게. 손을 떼고 1배보다 작으면 원래 크기로 돌아오게",
+    "related": [
+      "zoom-on-hover",
+      "swipe-gesture",
+      "drag-and-drop"
+    ],
+    "status": "final"
+  }
+]
